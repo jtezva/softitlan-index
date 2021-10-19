@@ -1,0 +1,54 @@
+.jumbotron img {
+    /* position: fixed; */
+    width: 294px;
+    height: 307px;
+    left: 69px;
+    top: -67px;
+}
+
+li a {
+    display: block;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+/* Cambiar el color del link*/
+
+li a:hover {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #188038;
+    -webkit-transform: scale(1.1);
+}
+
+.active {
+    background-color: #188038;
+}
+
+nav {
+    background-color: #34A853;
+}
+
+footer{
+    background-color: #131A22;
+    color: white;
+    text-align: center;
+}
+
+footer .redes{
+    display: inline;
+    justify-content: center;
+    background-color: #3F4042;
+    border: 2px solid #3F4042;
+    border-radius: 30px;
+}
+
+footer hr{
+    height: 1px;
+    width: 50%;
+    background-color: white;
+}
+
+footer span{
+    display: inline;
+    margin: 0 10% 0 0;
+}
