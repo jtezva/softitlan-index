@@ -27,17 +27,65 @@ li a:hover {
 nav {
     background-color: #34A853;
 }
+/* Nuestros servicios */
+.service {
+    background-color: #F3F5F9;
+    height: 100%;
+    border: 1px solid #F3F5F9;
+    margin: 2% 0 0 0;
+}
+.service .titulo-service {
+    font-size: 3vw;
+    color: #5C6064;
+    margin: 1% 0 0 2%;
+    border: 3px solid #5C6064;
+    width: 95.9%;
+}
+.service .card-header1 {
+    height: 260px;
+    background-image: url(img/school.jpg);
+    background-size: 80% ;
+}
 
+.service .card-header2 {
+    height: 260px;
+    background-image: url(img/cup.jpg);
+    background-size: 80% ;
+}
+.service .card-header3 {
+    height: 260px;
+    background-image: url(img/gnp.jpg);
+    background-size: 80% ;
+}
+
+.service .card {
+    display: inline-block;
+    width: 22.39%;
+    height: 100%;
+    margin: 1.5% 0 1.5% 2%;
+    position: static;
+    
+}
+
+.service .card-title{
+    font-size: 2vw;
+}
+
+.service .card-text{
+    font-size: 1vw;
+}
+/* Quienes somos */
 /* Team */
 
 .team {
     background-color: #F3F5F9;
     height: 100%;
     border: 1px solid #F3F5F9;
+    margin: 2% 0 0 0;
 }
 
 .team .titulo-team {
-    font-size: 300%;
+    font-size: 3.5vw;
     color: #5C6064;
     margin: 1.5% 0 0 2%;
     border: 3px solid #5C6064;
@@ -52,16 +100,23 @@ nav {
     
 }
 
-.card-header {
+.team .card-header {
     background-image: url(img/team.jpg);
     background-size:100% ;
+}
+
+.team .card-title{
+    font-size: 2vw;
+}
+
+.team .card-text{
+    font-size: 1vw;
 }
 
 .card-header img {
     width: 67.9%;
     margin: 0 auto 0 auto;
     display: block;
-
     /* opacity: 50%; */
 }
 
