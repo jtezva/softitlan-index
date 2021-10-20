@@ -30,10 +30,15 @@ nav {
 /* Team */
 .team{
     background-color: #F3F5F9;
+    height: 558px;
 }
 
 .team .titulo-team{
-    color: black;
+    font-size: 300%;
+    color: #5C6064;
+    margin: 1.5% 0 0 2%;
+    border: 3px solid #5C6064;
+    width: 31.8%;
 }
 .team .card{
     display: inline-block;
