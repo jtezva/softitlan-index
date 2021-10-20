@@ -32,7 +32,7 @@ nav {
 
 .team {
     background-color: #F3F5F9;
-    height: 558px;
+    height: 100%;
     border: 1px solid #F3F5F9;
 }
 
@@ -49,16 +49,19 @@ nav {
     width: 22.39%;
     margin: 1.5% 0 1.5% 2%;
     position: static;
+    
 }
 
 .card-header {
     background-image: url(img/team.jpg);
+    background-size:100% ;
 }
 
 .card-header img {
     width: 67.9%;
     margin: 0 auto 0 auto;
     display: block;
+
     /* opacity: 50%; */
 }
 
