@@ -38,56 +38,74 @@ li a:hover {
 nav {
     background-color: #34A853;
 }
+
 /* Team */
-.team{
+
+.team {
     background-color: #F3F5F9;
-    height: 558px;
+    height: 100%;
+    border: 1px solid #F3F5F9;
 }
 
-.team .titulo-team{
+.team .titulo-team {
     font-size: 300%;
     color: #5C6064;
     margin: 1.5% 0 0 2%;
     border: 3px solid #5C6064;
     width: 31.8%;
 }
-.team .card{
+
+.team .card {
     display: inline-block;
-    width: 2%px;
-    margin: 1.5% 0 1.5% 2%;   
+    width: 22.39%;
+    margin: 1.5% 0 1.5% 2%;
     position: static;
+    
 }
 
-.card-header{
+.card-header {
     background-image: url(img/team.jpg);
+    background-size:100% ;
 }
 
-.card-body{
+.card-header img {
+    width: 67.9%;
+    margin: 0 auto 0 auto;
+    display: block;
+
+    /* opacity: 50%; */
+}
+
+.card-body {
     background-color: #202124;
     text-align: center;
 }
 
-.card-body hr{
+.card-body hr {
     width: 70%;
     height: 5%;
     background-color: #FBBC04;
 }
-.card-body .card-text{
+
+.card-body .card-text {
     color: white;
 }
-.card-title{
+
+.card-title {
     color: white;
 }
+
 /* Contacto */
 
 /* FOOTER */
-footer{
+
+footer {
     background-color: #131A22;
     color: white;
     text-align: center;
 }
 
-footer .redes{
+footer .redes {
     width: 300px;
     background-color: #3F4042;
     border: 2px solid #3F4042;
@@ -95,24 +113,24 @@ footer .redes{
     margin: 0 auto;
 }
 
-footer .icon-red{
+footer .icon-red {
     width: 12%;
 }
 
-footer hr{
+footer hr {
     height: 1px;
     width: 50%;
     background-color: white;
 }
 
-footer span{
+footer span {
     display: inline;
     margin: 0 10% 0 0;
 }
 
 /* MISION VISION VALORES OBJETIVOS */
 
-.mvov{
+.mvov {
     background-image: url(img/img10.jpg);
     height: 100%;
 }
