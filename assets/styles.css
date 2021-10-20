@@ -1,10 +1,21 @@
-.jumbotron img {
-    /* position: fixed; */
-    width: 294px;
-    height: 307px;
-    left: 69px;
-    top: -67px;
+/*Jumbotron*/
+.jumbotron th{
+    width: 50%;
 }
+.jumbotron h1{
+width: 795px;
+height: 93px;
+left: 50%;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 2.0vw;
+line-height: 42px;
+align-items: center;
+text-align: center;
+
+color: #000000;
+}  
 
 li a {
     display: block;
