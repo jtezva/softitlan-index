@@ -17,9 +17,9 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key_path: "resources/devops/softitlan.pem"
+          key_path: "devops"
           script_stop: true
           script: |
             whoami
-            cd ~/project/softitlan-index/resources
+            cd ~/project/softitlan-index
             bash autodeploy.sh
