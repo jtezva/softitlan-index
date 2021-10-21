@@ -40,22 +40,24 @@ nav {
     background-color: #F3F5F9;
     height: 100%;
     border: 1px solid #F3F5F9;
-    margin: 2% 0 0 0;
+    margin: 4% 0 0 0;
 }
 .service .card-group{
     width: 100%;
-    padding-bottom: 4%;
+    height: 100%;
+    padding-bottom: 2%;
 }
 
 .service .card-group .card{
-    margin: 0 4% 0 4%;
+    margin: 1% 4% 0 4%;
     background: rgba(32, 33, 36,0.85);
     color: #FFFFFF;
     position: static;
 }
 
-.service .card-group .card-body img{
-    width: 75%;
+
+.service .img-fluid{
+    width: 80%;
     margin: auto auto;
     display: block;
 }
@@ -69,11 +71,11 @@ nav {
 }
 
 .service .card-header4, .card-header1, .card-header2, .card-header3{
-    height: 50%;
+    height: 60%;
 }
 
 .service .card-body{
-    height: 40%;
+    height: 50%;
 }
 
 .service .card-header1 {
@@ -96,10 +98,10 @@ nav {
 }
 
 .service .card-title{
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 .service .card-text{
-    font-size: 1.3vw;
+    font-size: 1vw;
 }
 
 /*Cartas mison, vision y eso*/
