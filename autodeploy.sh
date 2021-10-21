@@ -8,5 +8,7 @@ sudo cp -r resources index.html /var/www/html
 echo "\n Se realiza el deploy de index Softitlan"
 
 listaArchivos=`ls ~/project/softitlan-index/science`
+cd ~/project/softitlan-index/science
+echo $listaArchivos
 sudo cp -r $listaArchivos /var/www/html/science
 echo "Se realiza el deploy de ciencia"
