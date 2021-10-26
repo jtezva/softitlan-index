@@ -1,7 +1,7 @@
 /*Jumbotron*/
 
 .jumbotron {
-    position: sticky;
+    position: relative;
 }
 
 .imagen-2 {
@@ -26,6 +26,19 @@
     color: #000000;
 }
 
+/*Carrusel*/
+.carousel{    
+    height: 10%;
+    border: 2px solid blue;
+}
+
+.carousel .carousel-inner{
+    height: 50px;
+}
+
+.carousel .carousel-inner img{
+    height: 10%;
+}
 
 /* Cambiar el color del link*/
 
@@ -52,15 +65,17 @@ nav {
     border: 1px solid #F3F5F9;
     margin: 4% 0 0 0;
 }
-.service .card-group{
+
+.service .card-group{/*contenedor*/
     width: 100%;
     height: 100%;
     padding-bottom: 2%;
 }
 
 
-.service .card-group .card{
+.service .card-group .card{/*modificar cartas*/
     margin: 1% 4% 0 4%;
+    width: 95%;
     background: rgba(32, 33, 36,0.85);
     color: #FFFFFF;
     position: static;
@@ -205,8 +220,6 @@ section .card-img {
 /* Team */
 .team {
     background-color: #F3F5F9;
-    height: 100%;
-    border: 1px solid #F3F5F9;
     margin: 2% 0 0 0;
 }
 
@@ -218,20 +231,20 @@ section .card-img {
     width: 31.8%;
 }
 
-.team .card-group{
+.team .card-group{/*Contenedor de las cartas*/
     width: 100%;
     padding-bottom: 4%;
 }
 
 .team .card-group .card{
-    margin: 0 4% 0 4%;
+    margin: 0 4% 1% 4%;
     background: rgba(32, 33, 36,0.85);
-    color: #FFFFFF; 
-    position: static;
+    color: #FFFFFF;    
+    width: 95%;
 }
 
 .team .card-group .card-body img{
-    width: 75%;
+    width: 100%;
     margin: auto auto;
     display: block;
 }
@@ -264,7 +277,7 @@ section .card-img {
     font-size: 2vw;
 }
 .team .card-text{
-    font-size: 1.3vw;
+    font-size: 1vw;
 }
 
 .team .card-title {
