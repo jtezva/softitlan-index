@@ -26,21 +26,26 @@
     color: #000000;
 }
 
+
 /*Carrusel*/
-.qsomos{
-    position: -webkit-sticky;  
-    background-color: red;  
+
+.qsomos {
+    position: -webkit-sticky;
+    background-color: red;
 }
 
-.qsomos .carousel{
-    position: absolute;  
-    background-color: red;  
+.qsomos .carousel {
+    position: absolute;
+    background-color: red;
     /* margin: 13% 80% 0 0; */
 }
+
+
 /*
 .qsomos .carousel img{
 
 } */
+
 
 /* Cambiar el color del link*/
 
@@ -67,21 +72,21 @@ nav {
     border: 1px solid #F3F5F9;
     margin: 4% 0 0 0;
 }
-.service .card-group{
+
+.service .card-group {
     width: 100%;
     height: 100%;
     padding-bottom: 2%;
 }
 
-.service .card-group .card{
+.service .card-group .card {
     margin: 1% 4% 0 4%;
-    background: rgba(32, 33, 36,0.85);
+    background: rgba(32, 33, 36, 0.85);
     color: #FFFFFF;
     position: static;
 }
 
-
-.service .img-fluid{
+.service .img-fluid {
     width: 80%;
     margin: auto auto;
     display: block;
@@ -95,37 +100,42 @@ nav {
     width: 92%;
 }
 
-.service .card-header4, .card-header1, .card-header2, .card-header3{
+.service .card-header4,
+.card-header1,
+.card-header2,
+.card-header3 {
     height: 60%;
 }
 
-.service .card-body{
+.service .card-body {
     height: 50%;
 }
 
 .service .card-header1 {
     background-image: url(img/school.jpg);
-    background-size: 100% ;
+    background-size: 100%;
 }
 
 .service .card-header2 {
     background-image: url(img/cup.jpg);
-    background-size: 100% ;
+    background-size: 100%;
 }
 
 .service .card-header3 {
     background-image: url(img/gnp.jpg);
-    background-size: 100% ;
-}
-.service .card-header4 {
-    background-image: url(img/gnp.jpg);
-    background-size: 80% ;
+    background-size: 100%;
 }
 
-.service .card-title{
+.service .card-header4 {
+    background-image: url(img/gnp.jpg);
+    background-size: 80%;
+}
+
+.service .card-title {
     font-size: 1.5vw;
 }
-.service .card-text{
+
+.service .card-text {
     font-size: 1vw;
 }
 
@@ -161,7 +171,7 @@ nav {
     width: 100%;
 }
 
-header h2 {
+.quien header h2 {
     font-size: 2.5vw;
     margin: 2% 0 1% 6%;
     border: 3px solid #5C6064;
@@ -169,23 +179,24 @@ header h2 {
     color: #5C6064;
 }
 
-section th {
+.quien section th {
     width: 60%;
 }
 
-section .card-text {
+.quien section .card-text {
     margin: 2% 0 5% 10%;
     width: 100%;
     font-size: 1vw;
     padding-right: 20%;
 }
 
-section .card-img {
+.quien section .card-img {
     width: 70%;
 }
 
 
 /* Team */
+
 .team {
     background-color: #F3F5F9;
     height: 100%;
@@ -201,19 +212,19 @@ section .card-img {
     width: 31.8%;
 }
 
-.team .card-group{
+.team .card-group {
     width: 100%;
     padding-bottom: 4%;
 }
 
-.team .card-group .card{
+.team .card-group .card {
     margin: 0 4% 0 4%;
-    background: rgba(32, 33, 36,0.85);
-    color: #FFFFFF; 
+    background: rgba(32, 33, 36, 0.85);
+    color: #FFFFFF;
     position: static;
 }
 
-.team .card-group .card-body img{
+.team .card-group .card-body img {
     width: 75%;
     margin: auto auto;
     display: block;
@@ -221,7 +232,7 @@ section .card-img {
 
 .team .card-header {
     background-image: url(img/team.jpg);
-    background-size:100% ;
+    background-size: 100%;
 }
 
 .team .card-header img {
@@ -229,7 +240,7 @@ section .card-img {
     margin: 0 auto 0 auto;
     display: block;
     /* opacity: 50%; */
-} 
+}
 
 .team .card-body {
     background-color: #202124;
@@ -243,10 +254,11 @@ section .card-img {
     background-color: #FBBC04;
 }
 
-.team .card-title{
+.team .card-title {
     font-size: 2vw;
 }
-.team .card-text{
+
+.team .card-text {
     font-size: 1.3vw;
 }
 
@@ -280,7 +292,7 @@ section .card-img {
     font-size: 2.5vw;
 }
 
-.card-group {
+.contacto .card-group {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -308,7 +320,7 @@ section .card-img {
     }
 }
 
-.input-2 {
+.contacto .input-2 {
     border-bottom: .1rem solid white;
     margin-left: 3rem;
     margin-bottom: 3rem;
@@ -316,28 +328,28 @@ section .card-img {
     position: relative;
 }
 
-#demo2 {
+.contacto #demo2 {
     position: absolute;
     display: block;
     top: 10%;
     right: 1%;
 }
 
-#demo {
+.contacto #demo {
     position: absolute;
     display: block;
     top: 10%;
     right: 1%;
 }
 
-.input-3 {
+.contacto .input-3 {
     display: block;
     width: 12%;
     position: relative;
     border: 0 solid;
 }
 
-#demo3 {
+.contacto #demo3 {
     position: absolute;
     display: block;
     top: 10%;
@@ -346,7 +358,7 @@ section .card-img {
     width: 17%;
 }
 
-.entrada-3 {
+.contacto .entrada-3 {
     margin-left: 20%;
     background: transparent;
     font-size: 1.2vw;
@@ -355,7 +367,7 @@ section .card-img {
     display: flex;
 }
 
-.mensaje {
+.contacto .mensaje {
     background: rgba(196, 196, 196, 0.14);
     width: 70%;
     height: 120px;
@@ -377,7 +389,7 @@ footer p {
     font-size: 1.3vw;
 }
 
-footer span{
+footer span {
     font-size: 1.3vw;
 }
 
