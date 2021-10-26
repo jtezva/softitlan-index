@@ -27,18 +27,20 @@
 }
 
 /*Carrusel*/
-.carousel{    
-    height: 10%;
-    border: 2px solid blue;
+.qsomos{
+    position: -webkit-sticky;  
+    background-color: red;  
 }
 
-.carousel .carousel-inner{
-    height: 50px;
+.qsomos .carousel{
+    position: absolute;  
+    background-color: red;  
+    /* margin: 13% 80% 0 0; */
 }
+/*
+.qsomos .carousel img{
 
-.carousel .carousel-inner img{
-    height: 10%;
-}
+} */
 
 /* Cambiar el color del link*/
 
