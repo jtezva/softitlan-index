@@ -343,6 +343,8 @@ nav {
 }
 
 .contacto .input-3 {
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     width: 12%;
     position: relative;
