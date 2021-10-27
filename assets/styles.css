@@ -29,22 +29,54 @@
 
 /*Carrusel*/
 
-.qsomos {
-    position: -webkit-sticky;
-    background-color: red;
+.qsomos{
+    /* border: 5px solid red; */
 }
 
-.qsomos .carousel {
-    position: absolute;
-    background-color: red;
-    /* margin: 13% 80% 0 0; */
+.qsomos .carousel{
+    width: 33.1%;
+    display: inline-flex;
 }
 
-
-/*
 .qsomos .carousel img{
+    width: 5%;
+    height: 250px;
+    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+}
 
-} */
+.qsomos div#demo{
+    width: 33.1%;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.qsomos div#demo1{
+    width: 48%;
+    position: absolute;
+    z-index: 1;
+    margin: 0 0% 0 -8%;
+    clip-path: polygon(17.5% 0%, 100% 0%, 84% 100%, 0% 100%);
+}
+.qsomos div#demo2{
+    position: relative;
+    width: 33.1%;
+    margin: 0 0 0 33%;
+    clip-path: polygon(23% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+.qsomos .carousel img.izq{
+    width: 110%;
+    animation: slide 20s infinite;
+    /* clip-path: polygon(0% 0%, 91% 0%, 78% 100%, 0% 100%); */
+}
+.qsomos .carousel .cen{
+    width: 100%;
+    /* clip-path: polygon(9% 0%, 95% 0%, 76% 100%, 0% 100%); */
+}
+.qsomos .carousel .der{
+    width: 100%;
+    /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
+}
 
 
 /* Cambiar el color del link*/
