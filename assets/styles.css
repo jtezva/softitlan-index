@@ -30,43 +30,70 @@
 /*Carrusel*/
 
 .qsomos{
-    /* border: 5px solid red; */
+    margin: 3% 0 3% 0;
+    position: relative;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.qsomos .car{
+    margin: 0 0 0 2%;
+}
+
+.qsomos .info{
+    /* display: inline-block; */
+    position: absolute;
+    z-index: 1;
+    background-color: #202124;
+    margin: 5% 0 0 25%;
+    color: white;
+    z-index: 1;
+    height: 50%;
+    width: 50%;
+    opacity: 81%;
+    text-align: center;
+    align-items: center;
+}
+
+.qsomos .info h3{
+    font-size: 2vw;
+}
+
+.qsomos .info p{
+    opacity: 100%;
+    font-size: 1.2vw;
 }
 
 .qsomos .carousel{
-    width: 33.1%;
+    width: 100%;
     display: inline-flex;
 }
 
 .qsomos .carousel img{
-    width: 5%;
-    height: 250px;
+    width: 10%;
     /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
 }
 
 .qsomos div#demo{
-    width: 33.1%;
+    width: 38.2%;
     position: relative;
     clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 .qsomos div#demo1{
-    width: 48%;
-    position: absolute;
-    z-index: 1;
-    margin: 0 0% 0 -8%;
-    clip-path: polygon(17.5% 0%, 100% 0%, 84% 100%, 0% 100%);
+    width: 38.2%;
+    position: relative;
+    margin: 0 0% 0 -9%;
+    clip-path: polygon(25% 0%, 98% 0%, 75% 100%, 0% 100%);
 }
 .qsomos div#demo2{
     position: relative;
-    width: 33.1%;
-    margin: 0 0 0 33%;
+    width: 38.2%;
+    margin: 0 0 0 -9%;
     clip-path: polygon(23% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-
 .qsomos .carousel img.izq{
-    width: 110%;
-    animation: slide 20s infinite;
+    width: 100%;
     /* clip-path: polygon(0% 0%, 91% 0%, 78% 100%, 0% 100%); */
 }
 .qsomos .carousel .cen{
@@ -81,13 +108,13 @@
 
 /* Cambiar el color del link*/
 
-li a:hover {
+.navbar li a:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #188038;
     -webkit-transform: scale(1.1);
 }
 
-.active {
+.navbar .active {
     background-color: #188038;
 }
 
@@ -125,10 +152,10 @@ nav {
 }
 
 .service .titulo-service {
-    font-size: 3vw;
-    color: #5C6064;
+    font-size: 2.5vw;
+    color: black;
     margin: 1% 0 0 4%;
-    border: 3px solid #5C6064;
+    /* border: 3px solid #5C6064; */
     width: 92%;
 }
 
@@ -144,22 +171,22 @@ nav {
 }
 
 .service .card-header1 {
-    background-image: url(img/school.jpg);
+    background-image: url(https://drive.google.com/uc?id=1lv-5MgstpwL849L65TGPDOnKQW_a5YJb);
     background-size: 100%;
 }
 
 .service .card-header2 {
-    background-image: url(img/cup.jpg);
+    background-image: url(https://drive.google.com/uc?id=15oFIRYKVfJqq2vESZw8Ye5CwJWB4e7jj);
     background-size: 100%;
 }
 
 .service .card-header3 {
-    background-image: url(img/gnp.jpg);
+    background-image: url(https://drive.google.com/uc?id=1e-I0pWGUnfTMs2fCjT8HZCcKLhD-FN0r);
     background-size: 100%;
 }
 
 .service .card-header4 {
-    background-image: url(img/gnp.jpg);
+    background-image: url(https://drive.google.com/uc?id=1e-I0pWGUnfTMs2fCjT8HZCcKLhD-FN0r);
     background-size: 80%;
 }
 
@@ -206,9 +233,9 @@ nav {
 .quien header h2 {
     font-size: 2.5vw;
     margin: 2% 0 1% 6%;
-    border: 3px solid #5C6064;
+    /* border: 3px solid #5C6064; */
     width: 20.8%;
-    color: #5C6064;
+    color: black;
 }
 
 .quien section th {
@@ -263,7 +290,7 @@ nav {
 }
 
 .team .card-header {
-    background-image: url(img/team.jpg);
+    background-image: url(https://drive.google.com/uc?id=1Dbp0LmdTDKTiJlugGKiarZyAfFB7Wc0o);
     background-size: 100%;
 }
 
@@ -428,15 +455,16 @@ footer span {
 }
 
 footer .redes {
-    width: 20%;
-    background-color: #3F4042;
-    border: 2px solid #3F4042;
+    width: 25%;
+    /* background-color: #3F4042;
+    border: 2px solid #3F4042; */
     border-radius: 30px;
     margin: 0 auto;
 }
 
 footer .redes .img-fluid {
-    width: 12%;
+    width: 8%;
+    margin: 0 2%;
 }
 
 footer hr {
