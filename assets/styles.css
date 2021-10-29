@@ -29,18 +29,18 @@
 
 /*Carrusel*/
 
-.qsomos{
+.qsomos {
     margin: 3% 0 3% 0;
     position: relative;
     width: 100%;
     /* border: 2px solid red; */
 }
 
-.qsomos .car{
+.qsomos .car {
     margin: 0 0 0 2%;
 }
 
-.qsomos .info{
+.qsomos .info {
     /* display: inline-block; */
     position: absolute;
     z-index: 1;
@@ -55,52 +55,56 @@
     align-items: center;
 }
 
-.qsomos .info h3{
+.qsomos .info h3 {
     font-size: 2vw;
 }
 
-.qsomos .info p{
+.qsomos .info p {
     opacity: 100%;
     font-size: 1.2vw;
 }
 
-.qsomos .carousel{
+.qsomos .carousel {
     width: 100%;
     display: inline-flex;
 }
 
-.qsomos .carousel img{
+.qsomos .carousel img {
     width: 10%;
     /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
 }
 
-.qsomos div#demo{
+.qsomos div#demo {
     width: 38.2%;
     position: relative;
     clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
-.qsomos div#demo1{
+
+.qsomos div#demo1 {
     width: 38.2%;
     position: relative;
     margin: 0 0% 0 -9%;
     clip-path: polygon(25% 0%, 98% 0%, 75% 100%, 0% 100%);
 }
-.qsomos div#demo2{
+
+.qsomos div#demo2 {
     position: relative;
     width: 38.2%;
     margin: 0 0 0 -9%;
     clip-path: polygon(23% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.qsomos .carousel img.izq{
+.qsomos .carousel img.izq {
     width: 100%;
     /* clip-path: polygon(0% 0%, 91% 0%, 78% 100%, 0% 100%); */
 }
-.qsomos .carousel .cen{
+
+.qsomos .carousel .cen {
     width: 100%;
     /* clip-path: polygon(9% 0%, 95% 0%, 76% 100%, 0% 100%); */
 }
-.qsomos .carousel .der{
+
+.qsomos .carousel .der {
     width: 100%;
     /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
 }
@@ -325,7 +329,7 @@ nav {
 /* Contacto */
 
 .contacto {
-    background-image: url(img/img4.jpg);
+    background-image: url(https://drive.google.com/uc?id=1dQy7Q793DhbQ8QA_lbe36TbuK1bbGSq0);
     background-size: 100%;
     width: 100%;
     display: flex;
