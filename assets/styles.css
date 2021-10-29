@@ -56,7 +56,7 @@
 }
 
 .qsomos .info h3 {
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 .qsomos .info p {
@@ -224,6 +224,14 @@ nav {
     display: block;
 }
 
+.mision .card-title {
+    font-size: 2vw;
+}
+
+.mision .card-text {
+    font-size: 1.2vw;
+}
+
 
 /*Quienes somos descripcion completa*/
 
@@ -249,7 +257,7 @@ nav {
 .quien section .card-text {
     margin: 2% 0 5% 10%;
     width: 100%;
-    font-size: 1vw;
+    font-size: 1.2vw;
     padding-right: 20%;
 }
 
@@ -268,10 +276,10 @@ nav {
 }
 
 .team .titulo-team {
-    font-size: 3.5vw;
-    color: #5C6064;
+    font-size: 2.5vw;
+    color: black;
     margin: 1.5% 0 0 4%;
-    border: 3px solid #5C6064;
+    /* border: 3px solid #5C6064; */
     width: 31.8%;
 }
 
@@ -287,11 +295,16 @@ nav {
     position: static;
 }
 
-.team .card-group .card-body img {
+.team .circulo {
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+/* .team .card-group .card-body img {
     width: 75%;
     margin: auto auto;
     display: block;
-}
+} */
 
 .team .card-header {
     background-image: url(https://drive.google.com/uc?id=1Dbp0LmdTDKTiJlugGKiarZyAfFB7Wc0o);
@@ -299,10 +312,9 @@ nav {
 }
 
 .team .card-header img {
-    width: 67.9%;
+    width: 100%;
     margin: 0 auto 0 auto;
     display: block;
-    /* opacity: 50%; */
 }
 
 .team .card-body {
@@ -347,9 +359,9 @@ nav {
 }
 
 .contacto .cuadro h4 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+    /* font-family: Roboto; */
+    /* font-style: normal; */
+    /* font-weight: normal; */
     font-size: 36px;
     line-height: 70px;
     font-size: 2.5vw;
@@ -371,7 +383,7 @@ nav {
 .entrada {
     background: transparent;
     width: calc(94% - 1rem);
-    font-size: 1.0vw;
+    font-size: 1.2vw;
     border: 0 solid;
     color: white;
     display: block;
