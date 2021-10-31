@@ -18,7 +18,7 @@ $arrResponse = json_decode($response, true);
 // verificar la respuesta
 if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrResponse["score"] >= 0.5) {
     // Procesar el formulario xDD
-	echo "ok!, eres un humano";
+	echo "ok!, eres un humano y softitlan te dice wueno si puedes pasar";
 } else {
     // Fallo el captcha
 	echo "Lo siento, parece que eres un Robot";

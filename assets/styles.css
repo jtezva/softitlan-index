@@ -140,10 +140,12 @@ nav {
     width: 100%;
     height: 100%;
     padding-bottom: 2%;
+    margin: 0 5% 0 5%;
 }
 
 .service .card-group .card {
-    margin: 1% 4% 0 4%;
+    border-radius: 10px;
+    margin: 1% 6% 0 6%;
     background: rgba(32, 33, 36, 0.85);
     color: #FFFFFF;
     position: static;
@@ -168,6 +170,8 @@ nav {
 .card-header2,
 .card-header3 {
     height: 60%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .service .card-body {
