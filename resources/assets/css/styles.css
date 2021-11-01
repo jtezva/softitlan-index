@@ -1,0 +1,510 @@
+/*Jumbotron*/
+
+.jumbotron {
+    position: relative;
+}
+
+.imagen-2 {
+    bottom: 3%;
+    position: absolute;
+    width: 19%;
+}
+
+.jumbotron .texto-2 {
+    width: 70%;
+    margin-left: 25%;
+    margin-bottom: -4%;
+}
+
+.jumbotron h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vw;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+
+/*Carrusel*/
+
+.qsomos {
+    margin: 3% 0 3% 0;
+    position: relative;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.qsomos .car {
+    margin: 0 0 0 2%;
+}
+
+.qsomos .info {
+    /* display: inline-block; */
+    position: absolute;
+    z-index: 1;
+    background-color: #202124;
+    margin: 5% 0 0 25%;
+    color: white;
+    z-index: 1;
+    height: 50%;
+    width: 50%;
+    opacity: 81%;
+    text-align: center;
+    align-items: center;
+}
+
+.qsomos .info h3 {
+    font-size: 2.5vw;
+}
+
+.qsomos .info p {
+    opacity: 100%;
+    font-size: 1.2vw;
+}
+
+.qsomos .carousel {
+    width: 100%;
+    display: inline-flex;
+}
+
+.qsomos .carousel img {
+    width: 10%;
+    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+}
+
+.qsomos div#demo {
+    width: 38.2%;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.qsomos div#demo1 {
+    width: 38.2%;
+    position: relative;
+    margin: 0 0% 0 -9%;
+    clip-path: polygon(25% 0%, 98% 0%, 75% 100%, 0% 100%);
+}
+
+.qsomos div#demo2 {
+    position: relative;
+    width: 38.2%;
+    margin: 0 0 0 -9%;
+    clip-path: polygon(23% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.qsomos .carousel img.izq {
+    width: 100%;
+    /* clip-path: polygon(0% 0%, 91% 0%, 78% 100%, 0% 100%); */
+}
+
+.qsomos .carousel .cen {
+    width: 100%;
+    /* clip-path: polygon(9% 0%, 95% 0%, 76% 100%, 0% 100%); */
+}
+
+.qsomos .carousel .der {
+    width: 100%;
+    /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
+}
+
+
+/* Cambiar el color del link*/
+
+.navbar li a:hover {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #188038;
+    -webkit-transform: scale(1.1);
+}
+
+.navbar .active {
+    background-color: #188038;
+}
+
+nav {
+    background-color: #34A853;
+}
+
+
+/* Nuestros servicios */
+
+.service {
+    background-color: #F3F5F9;
+    height: 100%;
+    border: 1px solid #F3F5F9;
+    margin: 4% 0 0 0;
+}
+
+.service .card-group {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2%;
+    margin: 0 5% 0 5%;
+}
+
+.service .card-group .card {
+    border-radius: 10px;
+    margin: 1% 6% 0 6%;
+    background: rgba(32, 33, 36, 0.85);
+    color: #FFFFFF;
+    position: static;
+}
+
+.service .card-group .card:hover {
+    transform: scale(1.07);
+}
+
+.service .img-fluid {
+    width: 80%;
+    margin: auto auto;
+    display: block;
+}
+
+.service .titulo-service {
+    font-size: 2.5vw;
+    color: black;
+    margin: 1% 0 0 4%;
+    /* border: 3px solid #5C6064; */
+    width: 92%;
+}
+
+.service .card-header4,
+.card-header1,
+.card-header2,
+.card-header3 {
+    height: 60%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.service .card-body {
+    height: 50%;
+}
+
+.service .card-header1 {
+    background-image: url(https://drive.google.com/uc?id=1TVofx3rBRLRzk4qZtipBo-VpjWUBUkgk);
+    background-size: 100%;
+}
+
+.service .card-header2 {
+    background-image: url(https://drive.google.com/uc?id=10UczvGjD-yI_-aW-MOfVYaGoBsqFstlD);
+    background-size: 100%;
+}
+
+.service .card-header3 {
+    background-image: url(https://drive.google.com/uc?id=1U_PT0mk5PlvQqKfbHTlyRqORGhBMlM13);
+    background-size: 100%;
+}
+
+.service .card-header4 {
+    background-image: url(https://drive.google.com/uc?id=1U_PT0mk5PlvQqKfbHTlyRqORGhBMlM13);
+    background-size: 80%;
+}
+
+.service .card-title {
+    font-size: 1.5vw;
+}
+
+.service .card-text {
+    font-size: 1vw;
+}
+
+
+/*mison, vision y eso*/
+
+.mision .card-group {
+    background-image: url(https://drive.google.com/uc?id=1niLl6htDJLG_BlRJLosUSlJr5ki-BgZq);
+    background-size: 100%;
+    width: 100%;
+    padding-bottom: 4%;
+}
+
+.mision .card-group .card {
+    margin: 4% 4% 0 4%;
+    background: rgba(32, 33, 36, 0.85);
+    color: #FFFFFF;
+    display: block;
+    border-radius: 20px;
+}
+
+.mision .card-group .card:hover {
+    transform: scale(1.07);
+}
+
+.mision .card-group .card-body img {
+    width: 75%;
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+.mision .card-title {
+    font-size: 2vw;
+}
+
+.mision .card-text {
+    font-size: 1.2vw;
+}
+
+
+/*Quienes somos descripcion completa*/
+
+.quien {
+    background-image: url(https://drive.google.com/uc?id=1KSi7chZK9w6alPRu26Om6e5T_D0e3QEE);
+    background-size: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.quien header h2 {
+    font-size: 2.5vw;
+    margin: 2% 0 1% 6%;
+    /* border: 3px solid #5C6064; */
+    width: 20.8%;
+    color: black;
+}
+
+.quien section th {
+    width: 60%;
+}
+
+.quien section .card-text {
+    margin: 2% 0 5% 10%;
+    width: 100%;
+    font-size: 1.2vw;
+    padding-right: 20%;
+}
+
+.quien section .card-img {
+    width: 70%;
+}
+
+
+/* Team */
+
+.team {
+    background-color: #F3F5F9;
+    height: 100%;
+    border: 1px solid #F3F5F9;
+    margin: 2% 0 0 0;
+}
+
+.team .titulo-team {
+    font-size: 2.5vw;
+    color: black;
+    margin: 1.5% 0 0 4%;
+    /* border: 3px solid #5C6064; */
+    width: 31.8%;
+}
+
+.team .card-group {
+    width: 100%;
+    padding-bottom: 4%;
+}
+
+.team .card-group .card {
+    margin: 0 4% 0 4%;
+    background: rgba(32, 33, 36, 0.85);
+    color: #FFFFFF;
+    position: static;
+}
+
+.team .circulo {
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+/* .team .card-group .card-body img {
+    width: 75%;
+    margin: auto auto;
+    display: block;
+} */
+
+.team .card-header {
+    background-image: url(https://drive.google.com/uc?id=1Dbp0LmdTDKTiJlugGKiarZyAfFB7Wc0o);
+    background-size: 100%;
+}
+
+.team .card-header img {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+.team .card-body {
+    background-color: #202124;
+    text-align: center;
+    height: 50%;
+}
+
+.team .card-body hr {
+    width: 70%;
+    height: 1%;
+    background-color: #FBBC04;
+}
+
+.team .card-title {
+    font-size: 2vw;
+}
+
+.team .card-text {
+    font-size: 1.3vw;
+}
+
+
+/* Contacto */
+
+.contacto {
+    background-image: url(https://drive.google.com/uc?id=1dQy7Q793DhbQ8QA_lbe36TbuK1bbGSq0);
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto .cuadro {
+    display: block;
+    width: 70%;
+    margin: 4% 4% 4% 4%;
+    color: #FFFFFF;
+    background: rgba(32, 33, 36, 0.85);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.contacto .cuadro h4 {
+    /* font-family: Roboto; */
+    /* font-style: normal; */
+    /* font-weight: normal; */
+    font-size: 36px;
+    line-height: 70px;
+    font-size: 2.5vw;
+}
+
+.contacto .card-group {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.contacto .cuadro .card-body {
+    background: transparent;
+    color: #FFFFFF;
+    margin-right: 6%;
+    margin-left: 1%;
+}
+
+.entrada {
+    background: transparent;
+    width: calc(94% - 1rem);
+    font-size: 1.2vw;
+    border: 0 solid;
+    color: white;
+    display: block;
+    transition: 250ms background ease-in;
+    &:focus {
+        background: white;
+        color: black;
+        transition: 250ms background ease-in;
+    }
+}
+
+.contacto .input-2 {
+    border-bottom: .1rem solid white;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    padding: .5rem;
+    position: relative;
+}
+
+.contacto #demo2 {
+    position: absolute;
+    display: block;
+    top: 10%;
+    right: 1%;
+}
+
+.contacto #demo {
+    position: absolute;
+    display: block;
+    top: 10%;
+    right: 1%;
+}
+
+.contacto .input-3 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 12%;
+    position: relative;
+    border: 0 solid;
+}
+
+.contacto #demo3 {
+    position: absolute;
+    display: block;
+    top: 10%;
+    right: 5%;
+    height: 75%;
+    width: 17%;
+}
+
+.contacto .entrada-3 {
+    margin-left: 20%;
+    background: transparent;
+    font-size: 1.2vw;
+    border: 0 solid;
+    color: white;
+    display: flex;
+}
+
+.contacto .mensaje {
+    background: rgba(196, 196, 196, 0.14);
+    width: 70%;
+    height: 120px;
+    font-size: 1.0vw;
+    border: 0 solid;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #131A22;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.3vw;
+}
+
+footer span {
+    font-size: 1.3vw;
+}
+
+footer .redes {
+    width: 25%;
+    /* background-color: #3F4042;
+    border: 2px solid #3F4042; */
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+footer .redes .img-fluid {
+    width: 8%;
+    margin: 0 2%;
+}
+
+footer hr {
+    height: 1px;
+    width: 50%;
+    background-color: white;
+}
+
+footer span .derechos {
+    display: inline;
+    margin: 0 10% 0 0;
+}
