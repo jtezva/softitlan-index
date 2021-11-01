@@ -33,7 +33,6 @@
     margin: 3% 0 3% 0;
     position: relative;
     width: 100%;
-    /* border: 2px solid red; */
 }
 
 .qsomos .car {
@@ -41,7 +40,6 @@
 }
 
 .qsomos .info {
-    /* display: inline-block; */
     position: absolute;
     z-index: 1;
     background-color: #202124;
@@ -281,11 +279,10 @@ nav {
 
 
 /* Team */
-
 .team {
     background-color: #F3F5F9;
-    height: 100%;
     border: 1px solid #F3F5F9;
+    height: 100%;
     margin: 2% 0 0 0;
 }
 
@@ -297,32 +294,28 @@ nav {
     width: 31.8%;
 }
 
+.team .card-group .card {
+    margin: 0 4% 0 4%;
+    /* background: rgba(32, 33, 36, 0.85); */
+    color: #FFFFFF;
+    position: static;
+    background-color: #F3F5F9;
+    border: 1px solid #F3F5F9;
+}
+
 .team .card-group {
     width: 100%;
     padding-bottom: 4%;
-}
-
-.team .card-group .card {
-    margin: 0 4% 0 4%;
-    background: rgba(32, 33, 36, 0.85);
-    color: #FFFFFF;
-    position: static;
 }
 
 .team .circulo {
     clip-path: circle(50% at 50% 50%);
 }
 
-
-/* .team .card-group .card-body img {
-    width: 75%;
-    margin: auto auto;
-    display: block;
-} */
-
 .team .card-header {
     background-image: url(https://drive.google.com/uc?id=1Dbp0LmdTDKTiJlugGKiarZyAfFB7Wc0o);
-    background-size: 100%;
+    background-size: 100%;   
+    /*el estilo se agrego en linea*/
 }
 
 .team .card-header img {
@@ -335,6 +328,9 @@ nav {
     background-color: #202124;
     text-align: center;
     height: 50%;
+    /* border-radius: 1em; */
+    border-bottom-right-radius: 10% 20%;
+    border-bottom-left-radius: 10% 20%;
 }
 
 .team .card-body hr {
@@ -350,8 +346,6 @@ nav {
 .team .card-text {
     font-size: 1.3vw;
 }
-
-
 /* Contacto */
 
 .contacto {
