@@ -1,0 +1,25 @@
+name: CI/CD
+
+on: 
+  push:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Conect to aws
+        uses: appleboy/ssh-action@v0.1.4
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key_path: "devops/softitlan.pem"
+          script_stop: true
+          script: |
+            whoami
+            cd ~/project/softitlan-index
+            bash autodeploy.sh
