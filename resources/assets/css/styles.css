@@ -363,17 +363,17 @@ nav {
     justify-content: center;
 }
 
-.contacto .cuadro {
-    display: block;
-    width: 70%;
+.contacto .container {
+    /*display: block;*/
     margin: 4% 4% 4% 4%;
+    width: 100%;
     color: #FFFFFF;
     background: rgba(32, 33, 36, 0.85);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
 
-.contacto .cuadro h4 {
+.contacto .container h4 {
     /* font-family: Roboto; */
     /* font-style: normal; */
     /* font-weight: normal; */
@@ -383,7 +383,7 @@ nav {
 }
 
 .contacto .card-group {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1%;
@@ -397,7 +397,7 @@ nav {
 .contacto .entrada {
     background: transparent;
     width: calc(94% - 1rem);
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     border: 0 solid;
     color: white;
     display: block;
@@ -450,9 +450,11 @@ nav {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 12%;
+    width: 13%;
     position: relative;
     border: 0 solid;
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
 }
 
 .contacto #demo3 {
@@ -460,8 +462,8 @@ nav {
     display: block;
     top: 10%;
     right: 5%;
-    height: 75%;
-    width: 17%;
+    height: 76%;
+    width: 19%;
 }
 
 .contacto .entrada-3 {
