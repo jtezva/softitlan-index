@@ -211,14 +211,14 @@ nav {
 
 /*mison, vision y eso*/
 
-.mision .card-group {
+.mision .container-fluid {
     background-image: url(https://drive.google.com/uc?id=1niLl6htDJLG_BlRJLosUSlJr5ki-BgZq);
     background-size: 100%;
     width: 100%;
     padding-bottom: 4%;
 }
 
-.mision .card-group .card {
+.mision .container-fluid .card {
     margin: 4% 4% 0 4%;
     background: rgba(32, 33, 36, 0.85);
     color: #FFFFFF;
@@ -226,11 +226,11 @@ nav {
     border-radius: 15px;
 }
 
-.mision .card-group .card:hover {
+.mision .container-fluid .card:hover {
     transform: scale(1.07);
 }
 
-.mision .card-group .card-body img {
+.mision .container-fluid .card-body img {
     width: 75%;
     margin: 0 auto 0 auto;
     display: block;
@@ -269,7 +269,7 @@ nav {
 .quien section .card-text {
     margin: 2% 0 5% 10%;
     width: 100%;
-    font-size: 1.2vw;
+    font-size: 3vh;
     padding-right: 20%;
 }
 
@@ -491,7 +491,7 @@ footer span {
 }
 
 footer .redes {
-    width: 25%;
+    width: 50vh;
     /* background-color: #3F4042;
     border: 2px solid #3F4042; */
     border-radius: 30px;
@@ -512,4 +512,61 @@ footer hr {
 footer span .derechos {
     display: inline;
     margin: 0 10% 0 0;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+    footer p {
+        font-size: 3vw;
+    }
+
+    footer .redes {
+        width: 30vh;
+        /* background-color: #3F4042;
+        border: 2px solid #3F4042; */
+        border-radius: 30px;
+        margin: 0 auto;
+    }
+
+    footer span {
+        display: block;
+        margin: 0 0% 0 0;
+        font-size: 1.3vh;
+    }
+
+    footer span .derechos{
+        display: block;        
+        font-size: 1.3vh;
+    }
+
+    .quien header h2 {
+        font-size: 3.5vh;
+    }
+
+    .quien section .card-text {                
+        font-size: 2.5vh;
+    }
+
+    .mision .card-title {
+        font-size: 2vh;
+        margin: 0% 0% -7% 0%;/*10 Modificar a -7 si es oneline*/
+    }
+    .mision .card-text {
+        font-size: 1vh;
+        margin-top: -10%;/*30 Modificar a -10 si es una linea*/
+    }
+    
+    .mision .container-fluid .card {
+        margin: 10% 4% 0 4%;
+        background: rgba(32, 33, 36, 0.85);
+        color: #FFFFFF;
+        display: block;
+        border-radius: 15px;
+    }
+
+    .mision .container-fluid .card-body img {
+        width: 70%;/*100 Modificar a 50 si es de una linea*/
+        display: block;
+        opacity: 0.8;
+    }
 }
