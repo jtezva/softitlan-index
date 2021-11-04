@@ -283,6 +283,7 @@ nav {
     background-color: #F3F5F9;
     border: 1px solid #F3F5F9;
     height: 100%;
+    width: 100%;
     margin: 2% 0 0 0;
 }
 
@@ -295,7 +296,8 @@ nav {
 }
 
 .team .card-group .card {
-    margin: 0 4% 0 4%;
+    margin: 0 3% 0 3%;
+    width: 100%;
     /* background: rgba(32, 33, 36, 0.85); */
     color: #FFFFFF;
     position: static;
@@ -305,6 +307,7 @@ nav {
 
 .team .card-group {
     width: 100%;
+    display: inline-flex;
     padding-bottom: 4%;
 }
 
