@@ -2,18 +2,24 @@
 
 .jumbotron {
     position: relative;
+    height: 40%;
+    width: 100%;
 }
 
 .imagen-2 {
     bottom: 3%;
     position: absolute;
     width: 19%;
+    z-index: 2;
 }
 
 .jumbotron .texto-2 {
     width: 70%;
     margin-left: 25%;
     margin-bottom: -4%;
+    margin-top: 0%;
+    position: absolute;
+    z-index: 2;
 }
 
 .jumbotron h1 {
@@ -23,9 +29,21 @@
     font-size: 2vw;
     align-items: center;
     text-align: center;
-    color: #000000;
+    color: #FFFFFF;
 }
 
+.jumbotron .part{
+    position: absolute;
+    margin: -10.8vh 0% 0% -5.4vh;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.jumbotron hr{
+    background-color: white;
+    height: 2px;
+}
 
 /*Carrusel*/
 
@@ -570,5 +588,43 @@ footer span .derechos {
         width: 70%;/*100 Modificar a 50 si es de una linea*/
         display: block;
         opacity: 0.8;
+    }
+
+    .imagen-2 {
+        position: relative;
+        margin: 5vh 5vh 0 5vh;
+        width: 45vh;
+        opacity: 80%;
+    }
+
+    .jumbotron {
+        height: 100vh;
+        width: 100vw;
+        margin: -0% 0% 0% 0%;
+    }
+    .jumbotron h1 {
+        font-size: 2vh;
+    }
+    .jumbotron .texto-2 {
+        position: absolute;
+        margin: 5% 20% -50vh 10%;
+    }
+
+    .jumbotron .part{
+        position: absolute;
+        margin: -4vh 0% 0% -2.5vh;
+        height: 100vh;
+        width: 100vh;
+        z-index: 1;
+    }
+
+    .jumbotron h1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4vw;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
     }
 }
