@@ -2,6 +2,7 @@ hr {
     margin: 0 auto 0 auto;
 }
 
+
 /*Jumbotron*/
 
 .jumbotron {
@@ -48,6 +49,7 @@ hr {
     background-color: white;
     height: 2px;
 }
+
 
 /*Carrusel*/
 
@@ -129,6 +131,7 @@ hr {
     /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
 }
 
+
 /* Cambiar el color del link*/
 
 .navbar li a:hover {
@@ -145,6 +148,7 @@ nav {
     background-color: #34A853;
 }
 
+
 /* Nuestros servicios */
 
 .service {
@@ -154,27 +158,27 @@ nav {
     margin: 4% 0 0 0;
 }
 
-.service .card-group {
-    width: 100%;
-    height: 100%;
+.service .carousel-item {
+    padding-top: 2%;
     padding-bottom: 2%;
-    margin: 0 5% 0 5%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
 }
 
-.service .card-group .card {
+.service .card {
     border-radius: 15px;
-    margin: 1% 6% 0 6%;
+    margin: 1% 5% 0 5%;
     background: rgba(32, 33, 36, 0.85);
     color: #FFFFFF;
     position: static;
 }
 
-.service .card-group .card:hover {
+.service .card:hover {
     transform: scale(1.07);
 }
 
 .service .img-fluid {
-    width: 80%;
+    width: 75%;
     margin: auto auto;
     display: block;
 }
@@ -187,8 +191,11 @@ nav {
     width: 92%;
 }
 
-.service .card-header4, .card-header1, .card-header2, .card-header3 {
-    height: 60%;
+.service .card-header4,
+.card-header1,
+.card-header2,
+.card-header3 {
+    height: 40%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -222,8 +229,9 @@ nav {
 }
 
 .service .card-text {
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
+
 
 /*mison, vision y eso*/
 
@@ -232,6 +240,7 @@ nav {
     background-size: 100%;
     width: 100%;
     padding-bottom: 4%;
+    padding-top: 3%;
 }
 
 .mision .container-fluid .card {
@@ -260,37 +269,39 @@ nav {
     font-size: 1.2vw;
 }
 
+
 /*Quienes somos descripcion completa*/
 
 .quien {
     background-image: url(https://drive.google.com/uc?id=1KSi7chZK9w6alPRu26Om6e5T_D0e3QEE);
     background-size: 100%;
-    position: relative;
     width: 100%;
 }
 
 .quien header h2 {
     font-size: 2.5vw;
-    margin: 2% 0 1% 6%;
+    margin: 2% 0 4% 6%;
     /* border: 3px solid #5C6064; */
     width: 20.8%;
     color: black;
 }
 
-.quien section th {
-    width: 60%;
+.quien .card {
+    background: transparent;
+    border: 0;
 }
 
-.quien section .card-text {
-    margin: 2% 0 5% 10%;
-    width: 100%;
+.quien .texto {
+    margin: 0 0 9% 10%;
     font-size: 3vh;
-    padding-right: 20%;
 }
 
-.quien section .card-img {
-    width: 70%;
+.quien .img-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
+
 
 /* Team */
 
@@ -364,6 +375,7 @@ nav {
 .team .card-text {
     font-size: 2.3vh;
 }
+
 
 /* Contacto */
 
@@ -487,6 +499,7 @@ nav {
     color: white;
     display: flex;
 }
+
 
 /* FOOTER */
 
@@ -626,7 +639,7 @@ footer span .derechos {
     .qsomos .carousel .der {
         width: 100%;
     }
-    /* mision */
+    /* mision vision y eso */
     .mision .card-title {
         font-size: 2.5vh;
         margin: 0% 0% -7% 0%;
@@ -651,12 +664,25 @@ footer span .derechos {
         opacity: 0.8;
     }
     /*Service*/
+    .service .titulo-service {
+        font-size: 2.8vh;
+    }
+    .service .carousel-item {
+        padding: 5%;
+    }
+    .service .card-text {
+        font-size: 1.6vh;
+    }
+    .service .card-title {
+        font-size: 1.9vh;
+    }
     /*Quien*/
     .quien header h2 {
         font-size: 3.5vh;
     }
-    .quien section .card-text {
-        font-size: 2.5vh;
+    .quien section .texto {
+        font-size: 2vh;
+        margin-bottom: 0;
     }
     /*Team*/
     .team {
@@ -719,6 +745,41 @@ footer span .derechos {
         margin: auto auto;
     }
     /*Contacto*/
+    .contacto .container h4 {
+        font-size: x-large;
+    }
+    .contacto .input-3 {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 25%;
+        position: relative;
+        border: 0 solid;
+        padding-top: 0.7%;
+        padding-bottom: 0.7%;
+    }
+    .contacto #demo3 {
+        position: absolute;
+        display: block;
+        top: 10%;
+        right: 5%;
+        height: 76%;
+        width: 19%;
+    }
+    .contacto .entrada-3 {
+        margin-left: 17%;
+        background: transparent;
+        font-size: 2.8vw;
+        border: 0 solid;
+        color: white;
+        display: flex;
+    }
+    .contacto .entrada {
+        font-size: 1.8vh;
+    }
+    .contacto .mensaje {
+        font-size: 1.7vh;
+    }
     /*Footer*/
     hr {
         margin: 0 auto;
@@ -750,5 +811,63 @@ footer span .derechos {
         display: block;
         font-size: 1.3vh;
         margin: 0 auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 668px) {
+    /* 4 items */
+    .service .carousel-inner .active,
+    .service .carousel-inner .active+.carousel-item,
+    .service .carousel-inner .active+.carousel-item+.carousel-item,
+    .service .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item {
+        display: block;
+    }
+    .service .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .service .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+    .service .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item,
+    .service .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
+        transition: none;
+    }
+    .service .carousel-inner .carousel-item-next,
+    .service .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    .service .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* Movimiento de rotacion */
+    .service .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+    .service .carousel-item-next.carousel-item-left+.carousel-item,
+    .service .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+    .service .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    .service .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* Movimientos de rotacion */
+    .service .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+    .service .carousel-item-prev.carousel-item-right+.carousel-item,
+    .service .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+    .service .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item,
+    .service .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
     }
 }
