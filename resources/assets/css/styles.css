@@ -289,9 +289,9 @@ nav {
     border: 0;
 }
 
-.quien .texto {
-    margin: 0 0 9% 10%;
-    font-size: 2.4vh;
+.quien .card-text {
+    margin: 0 0 9% 4%;
+    font-size: 2.8vh;
 }
 
 .quien .img-fluid {
