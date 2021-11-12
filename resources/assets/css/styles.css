@@ -184,11 +184,10 @@ nav {
 }
 
 .service .titulo-service {
-    font-size: 2.5vw;
     color: black;
     margin: 1% 0 0 4%;
     /* border: 3px solid #5C6064; */
-    width: 92%;
+    /* width: 92%; */
 }
 
 .service .card-header4,
@@ -225,7 +224,7 @@ nav {
 }
 
 .service .card-title {
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 .service .card-text {
@@ -262,7 +261,7 @@ nav {
 }
 
 .mision .card-title {
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 .mision .card-text {
@@ -280,8 +279,7 @@ nav {
 
 .quien header h2 {
     font-size: 2.5vw;
-    margin: 2% 0 4% 6%;
-    /* border: 3px solid #5C6064; */
+    margin: 2% 0 4% 4%;
     width: 20.8%;
     color: black;
 }
@@ -293,7 +291,7 @@ nav {
 
 .quien .texto {
     margin: 0 0 9% 10%;
-    font-size: 3vh;
+    font-size: 2.4vh;
 }
 
 .quien .img-fluid {
@@ -314,7 +312,7 @@ nav {
 }
 
 .team .titulo-team {
-    /* font-size: 2.5vw; */
+    font-size: 2.5vw;
     color: black;
     margin: 1.5% 0 0 4%;
     /* border: 3px solid #5C6064; */
@@ -369,11 +367,10 @@ nav {
 }
 
 .team .card-title {
-    font-size: 3.5vh;
+    font-size: 4vh;
 }
-
 .team .card-text {
-    font-size: 2.3vh;
+    font-size: 2.5vh;
 }
 
 
@@ -587,7 +584,7 @@ footer span .derechos {
     } 
     /* qsomos */
     .qsomos {
-        margin: 3% 0 0 0;
+        margin: 3% 0 0% 0;
         position: relative;
         width: 100%;
         height: 100vh;
@@ -626,16 +623,17 @@ footer span .derechos {
     }
     .qsomos div#demo {
         width: 100%;
+        margin: 0% 0% 0% -1.6%;
         clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     }
     .qsomos div#demo1 {
         width: 100%;
-        margin: 0 0% 0 0%;
+        margin: 0% 0% 0% -1.6%;;
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     }
     .qsomos div#demo2 {
         width: 100%;
-        margin: 0 0 0 0%;
+        margin: 0% 0% 0% -1.6%;
         clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     }
     .qsomos .carousel img.izq {
