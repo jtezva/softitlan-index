@@ -155,6 +155,7 @@ nav {
     background-color: #F3F5F9;
     height: 100%;
     border: 1px solid #F3F5F9;
+    margin: 0 0 3% 0;
 }
 
 .carousel-inner {
@@ -241,6 +242,7 @@ nav {
     width: 100%;
     padding-bottom: 4%;
     padding-top: 3%;
+    margin: 0 0 3% 0 ;
 }
 
 .mision .container-fluid .card {
@@ -273,9 +275,11 @@ nav {
 /*Quienes somos descripcion completa*/
 
 .quien {
-    background-image: url(https://drive.google.com/uc?id=1KSi7chZK9w6alPRu26Om6e5T_D0e3QEE);
+    background-image: url(https://images.pexels.com/photos/5191390/pexels-photo-5191390.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    /* background-image: url(https://drive.google.com/uc?id=1KSi7chZK9w6alPRu26Om6e5T_D0e3QEE); */
     background-size: 100%;
     width: 100%;
+    margin: 0 0 3% 0;
 }
 
 .quien header h2 {
@@ -309,7 +313,7 @@ nav {
     border: 1px solid #F3F5F9;
     height: 100%;
     width: 100%;
-    margin: 2% 0 0 0;
+    margin: 0% 0 3% 0;
 }
 
 .team .titulo-team {
@@ -699,7 +703,8 @@ footer span .derechos {
     }
     /*Quien*/
     .quien {
-        background-image: url(https://drive.google.com/uc?id=1KSi7chZK9w6alPRu26Om6e5T_D0e3QEE);
+        background-image: url(https://images.pexels.com/photos/5191390/pexels-photo-5191390.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        /* background-image: url(https://drive.google.com/uc?id=1KSi7chZK9w6alPRu26Om6e5T_D0e3QEE); */
         background-size: cover;
     }
     .quien header h2 {
