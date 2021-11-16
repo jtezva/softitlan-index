@@ -132,7 +132,7 @@ hr {
 }
 
 
-/* Cambiar el color del link*/
+/* Cambiar el color del link nav*/
 
 .navbar li a:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -155,19 +155,20 @@ nav {
     background-color: #F3F5F9;
     height: 100%;
     border: 1px solid #F3F5F9;
-    margin: 4% 0 0 0;
+}
+
+.carousel-inner {
+    padding-left: 1.2%;
 }
 
 .service .carousel-item {
     padding-top: 2%;
     padding-bottom: 2%;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
 }
 
 .service .card {
     border-radius: 15px;
-    margin: 1% 5% 0 5%;
+    margin: 1% 3% 0 3%;
     background: rgba(32, 33, 36, 0.85);
     color: #FFFFFF;
     position: static;
@@ -388,17 +389,17 @@ nav {
     justify-content: center;
 }
 
-.contacto .container {
+.contacto .cuadro {
     /*display: block;*/
     margin: 4% 4% 4% 4%;
-    width: 100%;
+    width: 65%;
     color: #FFFFFF;
     background: rgba(32, 33, 36, 0.85);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
 
-.contacto .container h4 {
+.contacto .cuadro h4 {
     /* font-family: Roboto; */
     /* font-style: normal; */
     /* font-weight: normal; */
@@ -543,6 +544,13 @@ footer span .derechos {
 }
 
 @media screen and (max-width: 768px) {
+    /*Nav*/
+    .navbar li a:hover {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #188038;
+        -webkit-transform: scale(0.98);
+    }
+    /*Jumbotron*/
     .imagen-2 {
         position: relative;
         margin: 5vh 5vh 0 5vh;
@@ -640,6 +648,10 @@ footer span .derechos {
         width: 100%;
     }
     /* mision vision y eso */
+    .mision .container-fluid {
+        background-image: url(https://drive.google.com/uc?id=1niLl6htDJLG_BlRJLosUSlJr5ki-BgZq);
+        background-size: cover;
+    }
     .mision .card-title {
         font-size: 2.5vh;
         margin: 0% 0% -7% 0%;
@@ -664,6 +676,9 @@ footer span .derechos {
         opacity: 0.8;
     }
     /*Service*/
+    .carousel-inner {
+        padding-left: 1.2%;
+    }
     .service .titulo-service {
         font-size: 2.8vh;
     }
@@ -677,6 +692,10 @@ footer span .derechos {
         font-size: 1.9vh;
     }
     /*Quien*/
+    .quien {
+        background-image: url(https://drive.google.com/uc?id=1KSi7chZK9w6alPRu26Om6e5T_D0e3QEE);
+        background-size: cover;
+    }
     .quien header h2 {
         font-size: 3.5vh;
     }
@@ -745,7 +764,18 @@ footer span .derechos {
         margin: auto auto;
     }
     /*Contacto*/
-    .contacto .container h4 {
+    .contacto .cuadro {
+        /*display: block;*/
+        margin: 4% 4% 4% 4%;
+        width: 77%;
+    }
+    .contacto .card-group {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1%;
+    }
+    .contacto .cuadro h4 {
         font-size: x-large;
     }
     .contacto .input-3 {

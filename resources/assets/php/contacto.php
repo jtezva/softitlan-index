@@ -19,6 +19,7 @@ $arrResponse = json_decode($response, true);
 if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrResponse["score"] >= 0.5) {
     // Procesar el formulario xDD
 	echo "ok!, eres un humano y softitlan te dice wueno si puedes pasar";
+    header ("Location: http://www.softitlan.com/");
 } else {
     // Fallo el captcha
 	echo "Lo siento, parece que eres un Robot";
