@@ -93,7 +93,6 @@ hr {
 
 .qsomos .carousel img {
     width: 10%;
-    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
 }
 
 .qsomos div#demo {
@@ -118,17 +117,14 @@ hr {
 
 .qsomos .carousel img.izq {
     width: 100%;
-    /* clip-path: polygon(0% 0%, 91% 0%, 78% 100%, 0% 100%); */
 }
 
 .qsomos .carousel .cen {
     width: 100%;
-    /* clip-path: polygon(9% 0%, 95% 0%, 76% 100%, 0% 100%); */
 }
 
 .qsomos .carousel .der {
     width: 100%;
-    /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
 }
 
 
@@ -188,8 +184,6 @@ nav {
 .service .titulo-service {
     color: black;
     margin: 1% 0 0 4%;
-    /* border: 3px solid #5C6064; */
-    /* width: 92%; */
 }
 
 .service .card-header4,
@@ -276,7 +270,6 @@ nav {
 
 .quien {
     background-image: url(https://images.pexels.com/photos/5191390/pexels-photo-5191390.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-    /* background-image: url(https://drive.google.com/uc?id=1KSi7chZK9w6alPRu26Om6e5T_D0e3QEE); */
     background-size: 100%;
     width: 100%;
     margin: 0 0 3% 0;
@@ -320,14 +313,11 @@ nav {
     font-size: 2.5vw;
     color: black;
     margin: 1.5% 0 0 4%;
-    /* border: 3px solid #5C6064; */
-    /* width: 31.8%; */
 }
 
 .team .container-fluid .card {
     margin: 10% 0% 0 0%;
     width: 100%;
-    /* background: rgba(32, 33, 36, 0.85); */
     color: #FFFFFF;
     position: static;
     background-color: #F3F5F9;
@@ -347,7 +337,6 @@ nav {
 .team .card-header {
     background-image: url(https://drive.google.com/uc?id=1Dbp0LmdTDKTiJlugGKiarZyAfFB7Wc0o);
     background-size: 100%;
-    /*el estilo se agrego en linea*/
 }
 
 .team .card-header img {
@@ -360,7 +349,6 @@ nav {
     background-color: #202124;
     text-align: center;
     height: 50%;
-    /* border-radius: 1em; */
     border-bottom-right-radius: 5vh 5vh;
     border-bottom-left-radius: 5vh 5vh;
 }
@@ -391,7 +379,6 @@ nav {
 }
 
 .contacto .cuadro {
-    /*display: block;*/
     margin: 4% 4% 4% 4%;
     width: 65%;
     color: #FFFFFF;
@@ -401,9 +388,6 @@ nav {
 }
 
 .contacto .cuadro h4 {
-    /* font-family: Roboto; */
-    /* font-style: normal; */
-    /* font-weight: normal; */
     font-size: 36px;
     line-height: 70px;
     font-size: 2.5vw;
@@ -562,7 +546,6 @@ footer span .derechos {
     .jumbotron {
         height: 100vh;
         width: 100%;
-        /* margin: -0% 0% 0% 0%; */
         border: solid 1px #202124;
         background-color: #202124;
     }
@@ -576,7 +559,6 @@ footer span .derechos {
         background-color: #202124;
     }
     .jumbotron .part {
-        /* position: absolute; */
         margin: -4vh 0% 0% -2.2vh;
         height: 90vh;
         width: 110%;
@@ -704,7 +686,7 @@ footer span .derechos {
     /*Quien*/
     .quien {
         background-image: url(https://images.pexels.com/photos/5191390/pexels-photo-5191390.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-        /* background-image: url(https://drive.google.com/uc?id=1KSi7chZK9w6alPRu26Om6e5T_D0e3QEE); */
+        /* background-image: url(https://drive.google.com/uc?id=1KSi7chZK9w6alPRu26Om6e5T_D0e3QEE); alternative*/
         background-size: cover;
     }
     .quien header h2 {
@@ -724,17 +706,13 @@ footer span .derechos {
         overflow: hidden;
     }
     .team .titulo-team {
-        /* font-size: 2.5vw; */
         color: black;
         margin: 1.5% 0 0 4%;
-        /* border: 3px solid #5C6064; */
-        /* width: 31.8%; */
     }
     .team .container-fluid .card {
         margin: 3vh 0% 0 0%;
         padding: 0% 0% 4vh 0%;
         width: 100%;
-        /* background: rgba(32, 33, 36, 0.85); */
         color: #FFFFFF;
         position: static;
         background-color: #F3F5F9;
@@ -751,7 +729,6 @@ footer span .derechos {
     .team .card-header {
         background-image: url(https://drive.google.com/uc?id=1Dbp0LmdTDKTiJlugGKiarZyAfFB7Wc0o);
         background-size: 100%;
-        /*el estilo se agrego en linea*/
     }
     .team .card-header img {
         width: 100%;
@@ -762,7 +739,6 @@ footer span .derechos {
         background-color: #202124;
         text-align: center;
         height: 100%;
-        /* border-radius: 1em; */
         border-bottom-right-radius: 5vh 5vh;
         border-bottom-left-radius: 5vh 5vh;
     }
@@ -776,7 +752,6 @@ footer span .derechos {
     }
     /*Contacto*/
     .contacto .cuadro {
-        /*display: block;*/
         margin: 4% 4% 4% 4%;
         width: 77%;
     }
@@ -833,8 +808,6 @@ footer span .derechos {
     }
     footer .redes {
         width: 30vh;
-        /* background-color: #3F4042;
-        border: 2px solid #3F4042; */
         border-radius: 30px;
         margin: 0 auto;
     }
