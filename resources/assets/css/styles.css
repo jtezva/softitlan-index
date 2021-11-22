@@ -236,7 +236,7 @@ nav {
     width: 100%;
     padding-bottom: 4%;
     padding-top: 3%;
-    margin: 0 0 3% 0 ;
+    margin: 0 0 3% 0;
 }
 
 .mision .container-fluid .card {
@@ -362,6 +362,7 @@ nav {
 .team .card-title {
     font-size: 4vh;
 }
+
 .team .card-text {
     font-size: 2.5vh;
 }
@@ -575,7 +576,7 @@ footer span .derechos {
         text-align: center;
         color: #FFFFFF;
         background-color: #202124;
-    } 
+    }
     /* qsomos */
     .qsomos {
         margin: 3% 0 0% 0;
@@ -622,7 +623,8 @@ footer span .derechos {
     }
     .qsomos div#demo1 {
         width: 100%;
-        margin: 0% 0% 0% -1.6%;;
+        margin: 0% 0% 0% -1.6%;
+        ;
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     }
     .qsomos div#demo2 {
@@ -686,7 +688,6 @@ footer span .derechos {
     /*Quien*/
     .quien {
         background-image: url(https://images.pexels.com/photos/5191390/pexels-photo-5191390.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-        /* background-image: url(https://drive.google.com/uc?id=1KSi7chZK9w6alPRu26Om6e5T_D0e3QEE); alternative*/
         background-size: cover;
     }
     .quien header h2 {
