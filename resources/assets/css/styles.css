@@ -686,7 +686,6 @@ footer span .derechos {
     /*Quien*/
     .quien {
         background-image: url(https://images.pexels.com/photos/5191390/pexels-photo-5191390.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-        /* background-image: url(https://drive.google.com/uc?id=1KSi7chZK9w6alPRu26Om6e5T_D0e3QEE); alternative*/
         background-size: cover;
     }
     .quien header h2 {
