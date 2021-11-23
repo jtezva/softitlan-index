@@ -236,7 +236,7 @@ nav {
     width: 100%;
     padding-bottom: 4%;
     padding-top: 3%;
-    margin: 0 0 3% 0 ;
+    margin: 0 0 3% 0;
 }
 
 .mision .container-fluid .card {
@@ -362,6 +362,7 @@ nav {
 .team .card-title {
     font-size: 4vh;
 }
+
 .team .card-text {
     font-size: 2.5vh;
 }
@@ -575,7 +576,7 @@ footer span .derechos {
         text-align: center;
         color: #FFFFFF;
         background-color: #202124;
-    } 
+    }
     /* qsomos */
     .qsomos {
         margin: 3% 0 0% 0;
@@ -622,7 +623,8 @@ footer span .derechos {
     }
     .qsomos div#demo1 {
         width: 100%;
-        margin: 0% 0% 0% -1.6%;;
+        margin: 0% 0% 0% -1.6%;
+        ;
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     }
     .qsomos div#demo2 {
