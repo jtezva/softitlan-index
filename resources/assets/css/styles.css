@@ -649,12 +649,10 @@ footer span .derechos {
     .mision .card-title {
         font-size: 2.5vh;
         margin: 0% 0% -7% 0%;
-        /*10 Modificar a -7 si es oneline*/
     }
     .mision .card-text {
         font-size: 1.5vh;
         margin-top: -10%;
-        /*30 Modificar a -10 si es una linea*/
     }
     .mision .container-fluid .card {
         margin: 10% 4% 0 4%;
@@ -665,7 +663,6 @@ footer span .derechos {
     }
     .mision .container-fluid .card-body img {
         width: 70%;
-        /*100 Modificar a 50 si es de una linea*/
         display: block;
         opacity: 0.8;
     }
