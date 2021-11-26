@@ -100,6 +100,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="https://softitlan.com/docs/">Softitlan Docs</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="resources/assets/php/contacto.php">Softitlan contacto</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -526,31 +529,31 @@
                     <div class="card-group mt-2">
                         <div class="card-body" style="padding-top: 0%; padding-bottom: 0%;">
                             <div class="input-2">
-                                <input type="text" name="nombre" placeholder="Nombre" class="entrada">
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="entrada">
                                 <img src="https://drive.google.com/uc?id=1-qfgUMnlbPMAMAvT4fqw-l9KCZNKAGMK"
                                     alt="icon-nombre" class="img-fluid" id="demo">
                             </div>
                             <div class="input-2">
-                                <input type="text" name="telefono" placeholder="Telefono" class="entrada">
+                                <input type="text" name="telefono" id="telefono" placeholder="Telefono" class="entrada">
                                 <img src="https://drive.google.com/uc?id=1STU-TkHAEsa9YL4oj3LSkISLaDqHUrsr"
                                     alt="icon-nombre" class="img-fluid" id="demo">
                             </div>
                         </div>
                         <div class="card-body" style="margin-top: 0%; padding-top: 0%;">
                             <div class="input-2">
-                                <input type="text" name="correo" placeholder="Correo" class="entrada">
+                                <input type="text" name="correo" id="correo" placeholder="Correo" class="entrada">
                                 <img src="https://drive.google.com/uc?id=1xnRrnLHpvIE-HFl8sGdiZGbNxW_qbmRX"
                                     alt="icon-nombre" class="img-fluid" id="demo2">
                             </div>
 
                             <div class="input-2">
-                                <input type="text" name="asunto" placeholder="Asunto" class="entrada">
+                                <input type="text" name="asunto" id="asunto" placeholder="Asunto" class="entrada">
                                 <img src="https://drive.google.com/uc?id=1PRiMTfgwNQ3ebhFjTNjqqLNyVspFufXb"
                                     alt="icon-nombre" class="img-fluid" id="demo2">
                             </div>
                         </div>
                     </div>
-                    <textarea name="mensaje" placeholder="Mensaje" class="mensaje"> </textarea>
+                    <textarea name="mensaje" placeholder="Mensaje" id="mensaje" class="mensaje"> </textarea>
                     <br> <br>
                     <button type="submit" class="btn bg-info input-3">
                         <div class="entrada-3">Enviar</div>
@@ -562,19 +565,75 @@
                 </form>
                 <!--captcha-->
                 <script>
-                    $('#form').submit(function (event) {
-                        event.preventDefault();
-                        grecaptcha.ready(function () {
-                            grecaptcha.execute('6LdO6vYcAAAAAFAo-14uHj61Ze_tX6VFG4aDBqeN', {
-                                action: 'registro'
-                            }).then(function (token) {
-                                $('#form').prepend('<input type="hidden" name="token" value="' +
-                                    token + '">');
-                                $('#form').prepend(
-                                    '<input type="hidden" name="action" value="registro">');
-                                $('#form').unbind('submit').submit();
-                            });;
-                        });
+                    function numero() {
+                        let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+                        let t = true;
+                        for (let i = 0; i < telefono.value.length; i++) {
+                            if (numeros.includes(parseInt(telefono.value[i])) == false) {
+                                t = false;
+                                break;
+                            } else {
+                                t = true;
+                            }
+                        }
+                        return t;
+                    }
+                    const nombre = document.getElementById("nombre");
+                    const correo = document.getElementById("correo");
+                    const telefono = document.getElementById("telefono");
+                    const asunto = document.getElementById("asunto");
+                    const mensaje = document.getElementById("mensaje");
+                    form.addEventListener('submit', function (event2) {
+                        event2.preventDefault();
+                        let error = "";
+                        let n = true;
+                        let c = true;
+                        let t = true;
+                        let a = true;
+                        if (nombre.value == "") {
+                            error += "Por favor ingrese su nombre\n";
+                            n = false;
+                        }
+                        if (correo.value == "") {
+                            error += "Por favor ingrese su correo\n";
+                            c = false;
+                        }
+                        if (telefono.value == "" || telefono.value.length != 10) {
+                            let tel = "";
+                            if (numero() == false) {
+                                tel += "El numero tiene caracteres especiales\n";
+                            }
+                            tel += "Por favor ingrese un numero de telefono valido\n";
+                            error += tel;
+                        }
+                        if (asunto.value == "") {
+                            error += "Por favor ingrese su asunto\n";
+                            a = false;
+                        }
+                        if (mensaje.value == "") {
+                            error += "Por favor ingrese su mensaje\n";
+                        }
+
+                        if (n != false && c != false && t != false && a != false && mensaje.value != "") {
+
+                            grecaptcha.ready(function () {
+                                grecaptcha.execute('6LdO6vYcAAAAAFAo-14uHj61Ze_tX6VFG4aDBqeN', {
+                                    action: 'registro'
+                                }).then(function (token) {
+                                    $('#form').prepend(
+                                        '<input type="hidden" name="token" value="' +
+                                        token + '">');
+                                    $('#form').prepend(
+                                        '<input type="hidden" name="action" value="registro">'
+                                    );
+                                    $('#form').unbind('submit').submit();
+                                });;
+                            });
+                            alert("Enviado");
+                        } else {
+                            alert(error);
+                            error = "";
+                        }
                     });
                 </script>
             </div>
