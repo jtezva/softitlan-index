@@ -245,11 +245,11 @@ nav {
 	color: #554;
 }
 
-.text h1 {
+.service .text h1 {
 	font-size: 50px;
 }
 
-.text p {
+.service .text p {
 	width: 60%;
 	padding: 5px;
 	margin: auto;
@@ -296,11 +296,11 @@ nav {
 	overflow-x: auto;
 }
 
-section::-webkit-scrollbar {
+.service section::-webkit-scrollbar {
 	display: none;
 }
 
-section .product {
+.service section .product {
 	min-width: 24%;
 	height: 90%;
 	background: whitesmoke;
@@ -326,7 +326,7 @@ section .product {
 	width: 100%;
 }
 
-.detail,
+.service .detail,
 .button {
 	width: 90%;
 	/*background: red;*/
@@ -340,11 +340,11 @@ section .product {
 	color: #444;
 }
 
-small {
+.service small {
 	color: #555;
 }
 
-a {
+.service a {
 	text-decoration: none;
 	padding: 6px 14px;
 	font-size: 15px;
@@ -354,7 +354,7 @@ a {
 	color: white;
 }
 
-p.star {
+.service p.star {
 	margin: 5px auto;
 	width: 65%;
 	font-size: 25px;
