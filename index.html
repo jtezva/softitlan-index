@@ -83,7 +83,7 @@
             <a class="navbar-brand " href="index.html">
                 <img src="https://drive.google.com/uc?id=1aLQJaNGAd-NDXF3LEz47MIJWDi2hL2-2" width="25" height="25"
                     class="img-fluid" alt="-logo-softitlan">
-                Sifitlan
+                Softitlan
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -528,7 +528,8 @@
                                     alt="icon-nombre" class="img-fluid" id="demo">
                             </div>
                             <div class="input-2">
-                                <input type="text" name="telefono" id="telefono" placeholder="Telefono" class="entrada">
+                                <input type="text" name="telefono" id="telefono" placeholder="10 Digitos"
+                                    class="entrada">
                                 <img src="https://drive.google.com/uc?id=1STU-TkHAEsa9YL4oj3LSkISLaDqHUrsr"
                                     alt="icon-nombre" class="img-fluid" id="demo">
                             </div>
@@ -560,29 +561,25 @@
                 <!--captcha-->
                 <script>
                     function numero() {
-                        let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-                        let t = true;
-                        for (let i = 0; i < telefono.value.length; i++) {
-                            if (numeros.includes(parseInt(telefono.value[i])) == false) {
-                                t = false;
-                                break;
-                            } else {
-                                t = true;
-                                console.log(t);
-                            }
+                        const patron = /^\d{10}$/; //patron de 10 digitos
+                        const res = patron.test(telefono.value);
+                        if (res == true) {
+                            return true;
+                        } else {
+                            telefono.focus();
+                            return false;
                         }
+                    }
 
-                        if (t == true) {
-                            //Validar numero de telefono 
-                            console.log("Entro t == true");
-                            let patron = /^\d{10}$/;
-                            if (!patron.test(telefono.value)) {
-                                alert("El numero de telefono no es valido");
-                                telefono.focus();
-                                return false;
-                            }
+                    function correoV() {
+                        const patron = /^\w+([\.-]?\w+){5}@\w+([\.-]?\w+)+(\.\w{2,3})+$/;
+                        const res = patron.test(correo.value);
+                        if (res == true) {
+                            return true;
+                        } else {                            
+                            correo.focus();
+                            return false;
                         }
-                        return t;
                     }
 
                     const nombre = document.getElementById("nombre");
@@ -601,17 +598,24 @@
                             error += "Por favor ingrese su nombre\n";
                             n = false;
                         }
-                        if (correo.value == "") {
-                            error += "Por favor ingrese su correo\n";
-                            c = false;
+                        if (correoV.value == "" || correoV.value != "") {
+                            let cor = "";
+                            if (correoV() == false) {
+                                cor += "El correo no es valido\n";
+                            } else if(correo.value == ""){
+                                cor += "Por favor ingrese un correo electronico\n";
+                                c = false;
+                            }
+                            error += cor;
                         }
                         if (telefono.value == "" || telefono.value.length != 10) {
                             let tel = "";
                             if (numero() == false) {
                                 tel += "El numero tiene caracteres especiales\n";
+                            } else if(telefono.value.length != 10){
+                                tel += "Por favor ingrese un numero de telefono valido\n";
+                                t = false;
                             }
-                            tel += "Por favor ingrese un numero de telefono valido\n";
-                            t = false;
                             error += tel;
                         }
                         if (asunto.value == "") {
@@ -623,7 +627,6 @@
                         }
 
                         if (n != false && c != false && t != false && a != false && mensaje.value != "") {
-
                             grecaptcha.ready(function () {
                                 grecaptcha.execute('6LdO6vYcAAAAAFAo-14uHj61Ze_tX6VFG4aDBqeN', {
                                     action: 'registro'
