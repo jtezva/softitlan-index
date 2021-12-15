@@ -6,23 +6,20 @@ hr {
 /*Jumbotron*/
 
 .jumbotron {
-    position: relative;
-    height: 100vh;/*El tamaño se modifica en particulas.css*/
-    width: 100%;
+    background-color: #202124 !important;  
+    height: 50% !important;
+    /*El tamaño se modifica en particulas.css*/
 }
 
 .imagen-2 {
-    bottom: 3%;
     position: absolute;
-    width: 19%;
+    width: 70%;
     z-index: 2;
 }
 
 .jumbotron .texto-2 {
     width: 70%;
-    margin-left: 25%;
-    margin-bottom: -4%;
-    margin-top: 0%;
+    margin: 4% 0 0% 5%;
     position: absolute;
     z-index: 2;
     text-align: justify;
@@ -77,6 +74,11 @@ hr {
     opacity: 81%;
     text-align: center;
     align-items: center;
+}
+
+.qsomos .info p{
+    text-align: justify;
+    margin: 0 1vh 0 1vh;
 }
 
 .qsomos .info h3 {
@@ -200,23 +202,23 @@ nav {
     height: 50%;
 }
 
-.service .card-header1 {
-    background-image: url(https://drive.google.com/uc?id=1TVofx3rBRLRzk4qZtipBo-VpjWUBUkgk);
+.service .card-header1 {/*Control escolar*/
+    background-image: url(https://softitlan.com/taskmanager/resources/img/uploads/service-fce.png);
     background-size: 100%;
 }
 
-.service .card-header2 {
-    background-image: url(https://drive.google.com/uc?id=10UczvGjD-yI_-aW-MOfVYaGoBsqFstlD);
+.service .card-header2 {/*cuponealo*/
+    background-image: url(	https://softitlan.com/taskmanager/resources/img/uploads/service-fcup.png);
     background-size: 100%;
 }
 
-.service .card-header3 {
-    background-image: url(https://drive.google.com/uc?id=1U_PT0mk5PlvQqKfbHTlyRqORGhBMlM13);
+.service .card-header3 {/*ngp*/
+    background-image: url(	https://softitlan.com/taskmanager/resources/img/uploads/service-fgnp.png);
     background-size: 100%;
 }
 
-.service .card-header4 {
-    background-image: url(https://drive.google.com/uc?id=1U_PT0mk5PlvQqKfbHTlyRqORGhBMlM13);
+.service .card-header4 {/*gnp*/
+    background-image: url(	https://softitlan.com/taskmanager/resources/img/uploads/service-fgnp.png);
     background-size: 80%;
 }
 
@@ -444,14 +446,13 @@ nav {
 }
 
 .team .titulo-team {
-    font-size: 2.5vw;
     color: black;
     margin: 1.5% 0 0 4%;
 }
 
 .team .container-fluid .card {
     margin: 10% 0% 0 0%;
-    width: 100%;
+    /* width: 30vh; cambiar a vh */
     color: #FFFFFF;
     position: static;
     background-color: #F3F5F9;
@@ -459,8 +460,6 @@ nav {
 }
 
 .team .container-fluid {
-    width: 100%;
-    display: inline-flex;
     padding-bottom: 4%;
 }
 
@@ -469,7 +468,7 @@ nav {
 }
 
 .team .card-header {
-    background-image: url(https://drive.google.com/uc?id=1Dbp0LmdTDKTiJlugGKiarZyAfFB7Wc0o);
+    background-image: url(https://softitlan.com/taskmanager/resources/img/uploads/service-hojas.jpg);
     background-size: 100%;
 }
 
@@ -491,14 +490,6 @@ nav {
     width: 70%;
     height: 1%;
     background-color: #FBBC04;
-}
-
-.team .card-title {
-    font-size: 4vh;
-}
-
-.team .card-text {
-    font-size: 2.5vh;
 }
 
 
@@ -626,29 +617,14 @@ nav {
 /* FOOTER */
 
 footer {
-    background-color: #131A22;
+    background-color: #131A22 !important;
     color: white;
     text-align: center;
     padding: 0% auto 0% auto;
 }
 
-footer p {
-    font-size: 1.3vw;
-}
-
-footer span {
-    font-size: 1.3vw;
-}
-
-footer .redes {
-    width: 50vh;
-    border-radius: 30px;
-    margin: 0 auto;
-}
-
-footer .redes .img-fluid {
-    width: 8%;
-    margin: 0 2%;
+footer .row .img-fluid {
+    width: 40%;
 }
 
 footer hr {
@@ -661,10 +637,11 @@ footer hr {
 footer span .derechos {
     display: inline;
     margin: 0 10% 0 0;
-    font-size: 1vw;
 }
 
-@media screen and (max-width: 530px) {
+
+
+@media screen and (max-width: 530px) { /*telefono*/
 
     /*Nav*/
     .navbar li a:hover {
@@ -677,14 +654,14 @@ footer span .derechos {
     Todo se modifica en particulas.css
     */
 
+    .jumbotron{
+        height: 90% !important;
+    }
+
     /* qsomos */
     .qsomos {
         margin: 1vh 0 5vh 0;
         width: 100%;
-    }
-
-    .qsomos .car {
-        margin: 0 0 0 2%;
     }
 
     .qsomos .info {
@@ -701,25 +678,16 @@ footer span .derechos {
     } 
 
     .qsomos .info h3 {
-        margin: 20% 0 0 0;
+        margin: 25% 0 -5% 0;
         font-size: 6vw;
         align-items: center;
     }
 
     .qsomos .info p {
-        margin: 20% 10%;
+        margin: 15% 10% 0% 10%;
         opacity: 100%;
         font-size: 4vw;
         text-align: justify;
-    }
-
-    .qsomos .carousel {
-        width: 100%;
-        display: block;
-    }
-
-    .qsomos .carousel img {
-        width: 100%;
     }
 
     .qsomos div#demo {
@@ -845,9 +813,8 @@ footer span .derechos {
     }
 
     .team .titulo-team {
-        font-size: 3.5vh;
         color: black;
-        margin: 1.5% 0 0 4%;
+        margin: 1.5% 0 0 4%; 
     }
 
     .team .container-fluid .card {
@@ -887,16 +854,6 @@ footer span .derechos {
         height: 100%;
         border-bottom-right-radius: 5vh 5vh;
         border-bottom-left-radius: 5vh 5vh;
-    }
-
-    .team .card-title {
-        font-size: 3.5vh;
-    }
-
-    .team .card-text {
-        font-size: 2.5vh;
-        padding: auto 0% auto 0%;
-        margin: auto auto;
     }
 
     /*Contacto*/
@@ -954,44 +911,35 @@ footer span .derechos {
     }
 
     /*Footer*/
-    hr {
-        margin: 0 auto;
+    footer span .derechos{
+        display: block;    
     }
 
-    footer .redes .img-fluid {
+    footer .row .img-fluid {
         align-items: center;
-    }
-
-    footer p {
-        font-size: 3.5vw;
-    }
-
-    footer .redes {
-        width: 35vh;
-        border-radius: 30px;
-        margin: 0 auto;
-    }
-
-    footer hr {
-        margin: 2vh auto 2vh auto;
-        background-color: white;
-    }
-
-    footer span {
-        display: block;
-        margin: 0 auto 0 auto;
-        font-size: 2vh;
-        align-items: center;
-    }
-
-    footer span .derechos {
-        display: block;
-        font-size: 2vh;
-        margin: 0 auto 0 auto;
     }
 }
 
-@media screen and (min-width: 531px) and (max-width: 1023px) {
+@media screen and (min-width: 568px) and (max-width: 639px) { /*algunos telefonos volteados*/
+    .jumbotron {
+        height: 60% !important;
+    }
+
+    .jumbotron .imagen-2 {        
+        width: 50%;    
+        margin: 5% 0% 0% 2%;
+    }
+
+    .jumbotron .texto-2 {
+        width: 80%;
+        margin: 10% 0 0% -10%;
+        z-index: 2;
+        text-align: justify;
+        
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) { /*tablet*/
     /*Nav*/
     .navbar li a:hover {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -999,53 +947,76 @@ footer span .derechos {
         -webkit-transform: scale(0.98);
     }
 
-    /*Jumbotron
-    Todo se modifica en particulas.css
-    */
+    /*Jumbotron*/
+    .jumbotron{
+        height: 50% !important;
+    }
 
-    /* qsomos */
-    .qsomos {
-        margin: 3% 0 3% 0;
-        position: relative;
+    .imagen-2 {
+        align-items: center;
+        margin: auto auto;
+        width: 70%;
+        z-index: 2;
+    }
+    
+    .jumbotron .texto-2 {
+        width: 70%;
+        margin: 4% 10%;
+        position: absolute;
+        z-index: 2;
+        text-align: justify;
+    }
+
+    .imagen-2 {
+        width: 20%;
+        z-index: 2;
+    }
+    
+    .jumbotron .texto-2 {
+        width: 70%;
+        margin: -2% 0 0% 25%;
+        position: absolute;
+        z-index: 2;
+        text-align: justify;
+    }
+    
+    .jumbotron h1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2vw;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-align: justify;
+    } 
+
+    .jumbotron #particles-js{
+        position: absolute;
+        height: 100% !important;
         width: 100%;
+        z-index: 1;
     }
-    
-    .qsomos .car {
-        margin: 0 0 0 2%;
-    }
-    
+    /* qsomos */    
     .qsomos .info {
         position: absolute;
         z-index: 1;
         background-color: #202124;
-        margin: 5% 0 0 25%;
+        margin: 0.5% 0 0 25%;
         color: white;
         z-index: 1;
-        height: 50%;
+        height: 92%;
         width: 50%;
         opacity: 81%;
         text-align: center;
         align-items: center;
     }
     
-    .qsomos .info h3 {
-        font-size: 2.5vw;
-    }
-    
     .qsomos .info p {
         opacity: 100%;
-        font-size: 1.2vw;
+        font-size: 1.8vw;
     }
-    
-    .qsomos .carousel {
-        width: 100%;
-        display: inline-flex;
-    }
-    
-    .qsomos .carousel img {
-        width: 10%;
-    }
-    
+
     .qsomos div#demo {
         width: 38.2%;
         position: relative;
@@ -1176,9 +1147,10 @@ footer span .derechos {
     }
 
     .team .titulo-team {
-        font-size: 3.5vh;
         color: black;
         margin: 1.5% 0 0 4%;
+        border-bottom: 1px solid black;
+        width: 45%;
     }
 
     .team .container-fluid .card {
@@ -1202,7 +1174,7 @@ footer span .derechos {
     }
 
     .team .card-header {
-        background-image: url(https://drive.google.com/uc?id=1Dbp0LmdTDKTiJlugGKiarZyAfFB7Wc0o);
+        /* background-image: url(https://softitlan.com/taskmanager/resources/img/uploads/service-hojas.jpg); */
         background-size: 100%;
     }
 
@@ -1216,18 +1188,10 @@ footer span .derechos {
         background-color: #202124;
         text-align: center;
         height: 100%;
-        border-bottom-right-radius: 5vh 5vh;
-        border-bottom-left-radius: 5vh 5vh;
     }
 
-    .team .card-title {
-        font-size: 3.5vh;
-    }
-
-    .team .card-text {
-        font-size: 2.5vh;
-        padding: auto 0% auto 0%;
-        margin: auto auto;
+    .team .card-body .card-title{
+        font-size: 95%;
     }
 
     /*Contacto*/
@@ -1285,40 +1249,8 @@ footer span .derechos {
     }
 
     /*Footer*/
-    hr {
-        margin: 0 auto;
-    }
-
-    footer .redes .img-fluid {
-        align-items: center;
-    }
-
-    footer p {
-        font-size: 2vw;
-    }
-
-    footer .redes {
-        width: 35vh;
-        border-radius: 30px;
-        margin: 0 auto;
-    }
-
-    footer hr {
-        margin: 2vh auto 2vh auto;
-        background-color: white;
-    }
-
-    footer span {
-        display: block;
-        margin: 0 auto 0 auto;
-        font-size: 3vh;
-        align-items: center;
-    }
-
-    footer span .derechos {
-        display: block;
-        font-size: 3vh;
-        margin: 0 auto 0 auto;
+    footer .row .img-fluid {
+        width: 90%;    
     }
 }
 
