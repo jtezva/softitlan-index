@@ -7,11 +7,10 @@ hr {
 
 .jumbotron {
     position: relative;
-    height: 100vh;/*El tamaño se modifica en particulas.css*/
-    width: 100%;
+    /*El tamaño se modifica en particulas.css*/
 }
 
-.imagen-2 {
+.jumbotron .imagen-2 {
     bottom: 3%;
     position: absolute;
     width: 19%;
@@ -39,7 +38,7 @@ hr {
     text-align: justify;
 }
 
-.jumbotron #particles-js{
+.jumbotron #particles-js {
     position: absolute;
     margin: -10.8vh 0% 0% -5.4vh;
     height: 100%;
@@ -147,7 +146,43 @@ nav {
 }
 
 
-/* Nuestros servicios */
+/* Nuestros servicios 
+
+.service .cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+}
+
+.service .carousel-inner {
+    padding: 1em;
+}
+
+@media (min-width: 768px) {
+    .service .card img {
+        width: 75%;
+        margin: auto auto;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .service .card img {
+        height: 11em;
+    }
+}
+
 .service {
     background-color: #F3F5F9;
     height: 100%;
@@ -155,7 +190,7 @@ nav {
     margin: 0 0 3% 0;
 }
 
-.carousel-inner {
+.service .carousel-inner {
     padding-left: 1.2%;
 }
 
@@ -226,164 +261,114 @@ nav {
 
 .service .card-text {
     font-size: 1.2vw;
-    text-align: justify;
+}
+*/
+
+.service-fixed .cards-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
-.service {
-	width: 100%;
-	height: 840px;
-	/*background: red;*/
-	margin: 10px auto;
-	position: relative;
-	padding: 5px 0;
+.service-fixed {
+    background-color: #F3F5F9;
+    height: 100%;
+    margin: 0 0 3% 0;
 }
 
-.service .text {
-	padding: 10px;
-	text-align: center;
-	/*font-size: 30px;*/
-	color: #554;
+.carousel-inner {
+    padding-left: 1.2%;
 }
 
-.service .text h1 {
-	font-size: 50px;
+.service-fixed .carousel-item {
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
-.service .text p {
-	width: 60%;
-	padding: 5px;
-	margin: auto;
-	line-height: 30px;
+.service-fixed .card {
+    border-radius: 15px;
+    margin: 1% 3% 0 3%;
+    background: rgba(32, 33, 36, 0.85);
+    color: #FFFFFF;
+    position: static;
 }
 
-.service header {
-	width: 98%;
-	height: 60px;
-	margin: 0 auto;
-	/*background: gray;*/
-	display: flex;
-	align-items: center;
-	padding: 20px;
-	justify-content: space-between;
-	border-bottom: 2px solid #ddd;
+.service-fixed .card:hover {
+    transform: scale(1.05);
 }
 
-.service header p span {
-	font-size: 40px;
-	margin: 0 5px;
-	cursor: pointer;
-	color: #555;
-	width: 30px;
-	height: 30px;
-	display: inline-block;
-	line-height: 19px;
-	text-align: center;
-	border-radius: 3px;
+.service-fixed .img-fluid {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.service header p span:hover {
-	background: #222;
-	color: white;
+.service-fixed .titulo-service {
+    color: black;
+    margin: 1% 0 0 4%;
 }
 
-.service section {
-	width: 98%;
-	height: 600px;
-	/*background: red;*/
-	margin: auto;
-	display: flex;
-	align-items: center;
-	overflow-x: auto;
+.service-fixed,
+.card-header1,
+.card-header2,
+.card-header3 {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
-.service section::-webkit-scrollbar {
-	display: none;
+.service-fixed .card-header1 {
+    background-image: url(https://drive.google.com/uc?id=1TVofx3rBRLRzk4qZtipBo-VpjWUBUkgk);
+    background-size: 100%;
+    height: 55%;
 }
 
-.service section .product {
-	min-width: 24%;
-	height: 90%;
-	background: whitesmoke;
-	margin: 0 20px 0 0;
-	border-radius: 20px;
-	position: relative;
-	left: 0;
-	transition: 0.5s;
-
+.service-fixed .card-header2 {
+    background-image: url(https://drive.google.com/uc?id=10UczvGjD-yI_-aW-MOfVYaGoBsqFstlD);
+    background-size: 100%;
+    height: 55%;
 }
 
-.service picture {
-	width: 100%;
-	height: 70%;
-	padding: 20px;
-	/*background: green;*/
-	display: flex;
-	overflow: hidden;
-	margin-bottom: 20px;
+.service-fixed .card-header3 {
+    background-image: url(https://drive.google.com/uc?id=1U_PT0mk5PlvQqKfbHTlyRqORGhBMlM13);
+    background-size: 100%;
+    height: 55%;
 }
 
-.service picture img {
-	width: 100%;
+.service-fixed .card-title {
+    font-size: 2vw;
 }
 
-.service .detail,
-.button {
-	width: 90%;
-	/*background: red;*/
-	margin: auto;
-	padding: 5px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 50px;
-	font-size: 20px;
-	color: #444;
+.service-fixed .card-text {
+    font-size: 1.2vw;
 }
 
-.service small {
-	color: #555;
-}
 
-.service a {
-	text-decoration: none;
-	padding: 6px 14px;
-	font-size: 15px;
-	margin: 5px 0 0 20px;
-	display: inline-block;
-	background: #6773ff;
-	color: white;
-}
-
-.service p.star {
-	margin: 5px auto;
-	width: 65%;
-	font-size: 25px;
-	color: #808080;
-}
 /*mison, vision y eso*/
 
-.mision .container-fluid {
-    background-image: url(https://drive.google.com/uc?id=1niLl6htDJLG_BlRJLosUSlJr5ki-BgZq);
+.mision {
+    background-image: url(https://softitlan.com/taskmanager/resources/img/uploads/index-fondo-cartas.jpg);
     background-size: 100%;
     width: 100%;
     padding-bottom: 4%;
     padding-top: 3%;
-    margin: 0 0 3% 0;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
-.mision .container-fluid .card {
-    margin: 4% 4% 0 4%;
+.mision .card {
+    margin: 0 6% 0 6%;
     background: rgba(32, 33, 36, 0.85);
     color: #FFFFFF;
     display: block;
     border-radius: 15px;
+    height: 100%;
 }
 
-.mision .container-fluid .card:hover {
-    transform: scale(1.07);
+.mision .card:hover {
+    transform: scale(1.04);
 }
 
-.mision .container-fluid .card-body img {
+.mision .card-body img {
     width: 75%;
     margin: 0 auto 0 auto;
     display: block;
@@ -391,10 +376,11 @@ nav {
 
 .mision .card-title {
     font-size: 2.5vw;
+    margin-bottom: 8%;
 }
 
 .mision .card-text {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     text-align: justify;
 }
 
@@ -402,7 +388,7 @@ nav {
 /*Quienes somos descripcion completa*/
 
 .quien {
-    background-image: url(https://images.pexels.com/photos/5191390/pexels-photo-5191390.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-image: url(https://softitlan.com/taskmanager/resources/img/uploads/index-somos.jpg);
     background-size: 100%;
     width: 100%;
     margin: 0 0 3% 0;
@@ -426,10 +412,12 @@ nav {
     text-align: justify;
 }
 
-.quien .img-fluid {
+.quien img {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
 }
 
 
@@ -505,7 +493,7 @@ nav {
 /* Contacto */
 
 .contacto {
-    background-image: url(https://drive.google.com/uc?id=1dQy7Q793DhbQ8QA_lbe36TbuK1bbGSq0);
+    background-image: url(https://softitlan.com/taskmanager/resources/img/uploads/index-fondo-contacto.jpg);
     background-size: 100%;
     width: 100%;
     display: flex;
@@ -548,7 +536,6 @@ nav {
     color: white;
     display: block;
     transition: 250ms background ease-in;
-
     &:focus {
         background: white;
         color: black;
@@ -665,30 +652,25 @@ footer span .derechos {
 }
 
 @media screen and (max-width: 530px) {
-
     /*Nav*/
     .navbar li a:hover {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         background-color: #188038;
         -webkit-transform: scale(0.98);
     }
-
     /*Jumbotron
     Todo se modifica en particulas.css
     */
-
     /* qsomos */
     .qsomos {
         margin: 1vh 0 5vh 0;
         width: 100%;
     }
-
     .qsomos .car {
         margin: 0 0 0 2%;
     }
-
     .qsomos .info {
-        position: absolute; 
+        position: absolute;
         z-index: 1;
         background-color: #202124;
         margin: 5% 12%;
@@ -698,142 +680,91 @@ footer span .derechos {
         height: 50%;
         width: 80%;
         opacity: 81%;
-    } 
-
+    }
     .qsomos .info h3 {
         margin: 20% 0 0 0;
         font-size: 6vw;
         align-items: center;
     }
-
     .qsomos .info p {
         margin: 20% 10%;
         opacity: 100%;
         font-size: 4vw;
         text-align: justify;
     }
-
     .qsomos .carousel {
         width: 100%;
         display: block;
     }
-
     .qsomos .carousel img {
         width: 100%;
     }
-
     .qsomos div#demo {
         width: 100%;
         margin: 0% 0% 0% -1.6%;
         clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     }
-
     .qsomos div#demo1 {
         width: 100%;
         margin: 0% 0% 0% -1.6%;
         ;
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     }
-
     .qsomos div#demo2 {
         width: 100%;
         margin: 0% 0% 0% -1.6%;
         clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     }
-
     .qsomos .carousel img.izq {
         width: 100%;
     }
-
     .qsomos .carousel .cen {
         width: 100%;
     }
-
     .qsomos .carousel .der {
         width: 100%;
     }
-
     /* mision vision y eso */
-    .mision{
+    .mision {
         margin: 1vh 0 1vh 0;
     }
-
     .mision .container-fluid {
         background-image: url(https://drive.google.com/uc?id=1niLl6htDJLG_BlRJLosUSlJr5ki-BgZq);
         background-size: cover;
     }
-
     .mision .card-title {
         font-size: 3.5vh;
-        margin: 0% 0% 10% 0%;
+        margin-bottom: 8%;
     }
-
     .mision .card-text {
         font-size: 2vh;
         text-align: justify;
         margin-top: -10%;
     }
-
-    .mision .container-fluid .card {
-        margin: 10% 4% 0 4%;
+    .mision .card {
+        margin-left: 10%;
+        margin-right: 10%;
         background: rgba(32, 33, 36, 0.85);
         color: #FFFFFF;
         display: block;
         border-radius: 15px;
     }
-
-    .mision .container-fluid .card-body img {
+    .mision .card-body img {
         width: 70%;
         display: block;
         opacity: 0.8;
     }
-
     /*Service*/
-    .carousel-inner {
-        padding-left: 1.2%;
-    }
-
-    .service .titulo-service {
-        font-size: 2.8vh;
-    }
-
-    .service .carousel-item {
-        padding: 5%;
-    }
-
-    .service .card-text {
-        font-size: 2vh;
-        text-align: justify;
-    }
-
-    .service .card-title {
-        font-size: 3.5vh;
-    }
-
-    .service .titulo-service {
-        font-size: 3.5vh;
-    }
-
-    .service{
-        margin: 8vh 0 8vh 0;
-    }
-
     /*Quien*/
     .quien {
         background-image: url(https://images.pexels.com/photos/5191390/pexels-photo-5191390.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
         background-size: cover;
         margin: 8vh 0 8vh 0;
     }
-
     .quien header h2 {
-        font-size: 3.5vh;
+        font-size: 4.5vh;
+        width: 100%;
     }
-
-    .quien section .texto {
-        font-size: 2vh;
-        margin-bottom: 0;
-    }
-
     /*Team*/
     .team {
         background-color: #F3F5F9;
@@ -843,13 +774,11 @@ footer span .derechos {
         margin: 8vh 0 8vh 0;
         overflow: hidden;
     }
-
     .team .titulo-team {
         font-size: 3.5vh;
         color: black;
         margin: 1.5% 0 0 4%;
     }
-
     .team .container-fluid .card {
         margin: 3vh 0% 0 0%;
         padding: 0% 0% 4vh 0%;
@@ -859,28 +788,23 @@ footer span .derechos {
         background-color: #F3F5F9;
         border: 1px solid #F3F5F9;
     }
-
     .team .container-fluid {
         width: 100%;
         display: inline-flex;
         padding-bottom: 4%;
     }
-
     .team .circulo {
         clip-path: circle(50% at 50% 50%);
     }
-
     .team .card-header {
         background-image: url(https://drive.google.com/uc?id=1Dbp0LmdTDKTiJlugGKiarZyAfFB7Wc0o);
         background-size: 100%;
     }
-
     .team .card-header img {
         width: 100%;
         margin: 0 auto 0 auto;
         display: block;
     }
-
     .team .card-body {
         background-color: #202124;
         text-align: center;
@@ -888,45 +812,38 @@ footer span .derechos {
         border-bottom-right-radius: 5vh 5vh;
         border-bottom-left-radius: 5vh 5vh;
     }
-
     .team .card-title {
         font-size: 3.5vh;
     }
-
     .team .card-text {
         font-size: 2.5vh;
         padding: auto 0% auto 0%;
         margin: auto auto;
     }
-
     /*Contacto*/
     .contacto .cuadro {
         margin: 4% 4% 4% 4%;
         width: 77%;
     }
-
     .contacto .card-group {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
         padding-top: 1%;
     }
-
-    .contacto .cuadro h4 {
-        font-size: x-large;
+    .contacto .cuadro h2 {
+        font-size: 4.5vh;
     }
-
     .contacto .input-3 {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 25%;
+        width: 34%;
         position: relative;
         border: 0 solid;
         padding-top: 0.7%;
         padding-bottom: 0.7%;
     }
-
     .contacto #demo3 {
         position: absolute;
         display: block;
@@ -935,55 +852,45 @@ footer span .derechos {
         height: 76%;
         width: 19%;
     }
-
     .contacto .entrada-3 {
-        margin-left: 17%;
+        margin-left: 15%;
         background: transparent;
-        font-size: 2.8vw;
+        font-size: 4.0vw;
         border: 0 solid;
         color: white;
         display: flex;
     }
-
     .contacto .entrada {
         font-size: 2.5vh;
     }
-
     .contacto .mensaje {
-        font-size: 1.7vh;
+        font-size: 2.5vh;
     }
-
     /*Footer*/
     hr {
         margin: 0 auto;
     }
-
     footer .redes .img-fluid {
         align-items: center;
     }
-
     footer p {
         font-size: 3.5vw;
     }
-
     footer .redes {
         width: 35vh;
         border-radius: 30px;
         margin: 0 auto;
     }
-
     footer hr {
         margin: 2vh auto 2vh auto;
         background-color: white;
     }
-
     footer span {
         display: block;
         margin: 0 auto 0 auto;
         font-size: 2vh;
         align-items: center;
     }
-
     footer span .derechos {
         display: block;
         font-size: 2vh;
@@ -991,29 +898,25 @@ footer span .derechos {
     }
 }
 
-@media screen and (min-width: 531px) and (max-width: 1023px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
     /*Nav*/
     .navbar li a:hover {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         background-color: #188038;
         -webkit-transform: scale(0.98);
     }
-
     /*Jumbotron
     Todo se modifica en particulas.css
     */
-
     /* qsomos */
     .qsomos {
         margin: 3% 0 3% 0;
         position: relative;
         width: 100%;
     }
-    
     .qsomos .car {
         margin: 0 0 0 2%;
     }
-    
     .qsomos .info {
         position: absolute;
         z-index: 1;
@@ -1027,144 +930,88 @@ footer span .derechos {
         text-align: center;
         align-items: center;
     }
-    
     .qsomos .info h3 {
         font-size: 2.5vw;
     }
-    
     .qsomos .info p {
         opacity: 100%;
         font-size: 1.2vw;
     }
-    
     .qsomos .carousel {
         width: 100%;
         display: inline-flex;
     }
-    
     .qsomos .carousel img {
         width: 10%;
     }
-    
     .qsomos div#demo {
         width: 38.2%;
         position: relative;
         clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
     }
-    
     .qsomos div#demo1 {
         width: 38.2%;
         position: relative;
         margin: 0 0% 0 -9%;
         clip-path: polygon(25% 0%, 98% 0%, 75% 100%, 0% 100%);
     }
-    
     .qsomos div#demo2 {
         position: relative;
         width: 38.2%;
         margin: 0 0 0 -9%;
         clip-path: polygon(23% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
-    
     .qsomos .carousel img.izq {
         width: 100%;
     }
-    
     .qsomos .carousel .cen {
         width: 100%;
     }
-    
     .qsomos .carousel .der {
         width: 100%;
     }
     /* mision vision y eso */
-    .mision{
-        margin: 1vh 0 1vh 0;
-    }
-
-    .mision .container-fluid {
+    .mision {
         background-image: url(https://drive.google.com/uc?id=1niLl6htDJLG_BlRJLosUSlJr5ki-BgZq);
         background-size: cover;
-        margin: 0 0 0% 0;
     }
-
     .mision .card-title {
         font-size: 3.5vh;
         margin: 0% 0% 10% 0%;
     }
-
     .mision .card-text {
-        font-size: 2.5vh;
+        font-size: 2.0vh;
         text-align: justify;
     }
-
-    .mision .container-fluid .card {
-        margin: 10% 4% 0 4%;
+    .mision .card {
         background: rgba(32, 33, 36, 0.85);
         color: #FFFFFF;
         display: block;
         border-radius: 15px;
     }
-
-    .mision .container-fluid .card-body img {
+    .mision .card-body img {
         width: 70%;
         display: block;
         opacity: 0.8;
     }
-
     /*Service*/
-    .carousel-inner {
-        padding-left: 1.2%;
-    }
-
-    .service .titulo-service {
-        font-size: 3vh;
-    }
-
-    .service .carousel-item {
-        padding: 5%;
-    }
-
-    .service .card-text {
-        font-size: 2vh;
-        text-align: justify;
-    }
-
-    .service .card-title {
-        font-size: 3.5vh;
-    }
-
-    .service .titulo-service {
-        font-size: 3.5vh;
-    }
-
-    .service{
-        margin: 8vh 0 8vh 0;
-    }
-
     /*Quien*/
     .quien {
         background-image: url(https://images.pexels.com/photos/5191390/pexels-photo-5191390.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
         background-size: cover;
         margin: 8vh 0 8vh 0;
     }
-
     .quien header h2 {
-        font-size: 3.5vh;
+        font-size: 4.5vh;
+        width: 100%;
     }
-
-    .quien section .texto {
-        font-size: 1.5vh;
-        margin-bottom: 0;
+    .quien img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
     }
-
-    .quien img{
-        opacity: 0.8;
-        position: absolute;
-        width: 50vh !important;
-        height: 30vh;
-    }
-
     /*Team*/
     .team {
         background-color: #F3F5F9;
@@ -1174,13 +1021,11 @@ footer span .derechos {
         margin: 8vh 0 8vh 0;
         overflow: hidden;
     }
-
     .team .titulo-team {
         font-size: 3.5vh;
         color: black;
         margin: 1.5% 0 0 4%;
     }
-
     .team .container-fluid .card {
         margin: 3vh 0% 0 0%;
         padding: 0% 0% 4vh 0%;
@@ -1190,28 +1035,23 @@ footer span .derechos {
         background-color: #F3F5F9;
         border: 1px solid #F3F5F9;
     }
-
     .team .container-fluid {
         width: 100%;
         display: inline-flex;
         padding-bottom: 4%;
     }
-
     .team .circulo {
         clip-path: circle(50% at 50% 50%);
     }
-
     .team .card-header {
         background-image: url(https://drive.google.com/uc?id=1Dbp0LmdTDKTiJlugGKiarZyAfFB7Wc0o);
         background-size: 100%;
     }
-
     .team .card-header img {
         width: 100%;
         margin: 0 auto 0 auto;
         display: block;
     }
-
     .team .card-body {
         background-color: #202124;
         text-align: center;
@@ -1219,45 +1059,38 @@ footer span .derechos {
         border-bottom-right-radius: 5vh 5vh;
         border-bottom-left-radius: 5vh 5vh;
     }
-
     .team .card-title {
         font-size: 3.5vh;
     }
-
     .team .card-text {
         font-size: 2.5vh;
         padding: auto 0% auto 0%;
         margin: auto auto;
     }
-
     /*Contacto*/
     .contacto .cuadro {
         margin: 4% 4% 4% 4%;
         width: 77%;
     }
-
     .contacto .card-group {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
         padding-top: 1%;
     }
-
-    .contacto .cuadro h4 {
-        font-size: x-large;
+    .contacto .cuadro h2 {
+        font-size: 4.5vh;
     }
-
     .contacto .input-3 {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 25%;
+        width: 20%;
         position: relative;
         border: 0 solid;
         padding-top: 0.7%;
         padding-bottom: 0.7%;
     }
-
     .contacto #demo3 {
         position: absolute;
         display: block;
@@ -1266,123 +1099,48 @@ footer span .derechos {
         height: 76%;
         width: 19%;
     }
-
     .contacto .entrada-3 {
         margin-left: 17%;
         background: transparent;
-        font-size: 2.8vw;
+        font-size: 2.2vw;
         border: 0 solid;
         color: white;
         display: flex;
     }
-
     .contacto .entrada {
         font-size: 2.5vh;
     }
-
     .contacto .mensaje {
-        font-size: 1.7vh;
+        font-size: 2.5vh;
     }
-
     /*Footer*/
     hr {
         margin: 0 auto;
     }
-
     footer .redes .img-fluid {
         align-items: center;
     }
-
     footer p {
         font-size: 2vw;
     }
-
     footer .redes {
         width: 35vh;
         border-radius: 30px;
         margin: 0 auto;
     }
-
     footer hr {
         margin: 2vh auto 2vh auto;
         background-color: white;
     }
-
     footer span {
         display: block;
         margin: 0 auto 0 auto;
         font-size: 3vh;
         align-items: center;
     }
-
     footer span .derechos {
         display: block;
         font-size: 3vh;
         margin: 0 auto 0 auto;
-    }
-}
-
-@media screen and (min-width: 531px) {
-
-    /* 4 items */
-    .service .carousel-inner .active,
-    .service .carousel-inner .active+.carousel-item,
-    .service .carousel-inner .active+.carousel-item+.carousel-item,
-    .service .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item {
-        display: block;
-    }
-
-    .service .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .service .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
-    .service .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item,
-    .service .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
-        transition: none;
-    }
-
-    .service .carousel-inner .carousel-item-next,
-    .service .carousel-inner .carousel-item-prev {
-        position: relative;
-        transform: translate3d(0, 0, 0);
-    }
-
-    .service .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-        position: absolute;
-        top: 0;
-        right: -33.3333%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-    /* Movimiento de rotacion */
-    .service .active.carousel-item-left+.carousel-item-next.carousel-item-left,
-    .service .carousel-item-next.carousel-item-left+.carousel-item,
-    .service .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
-    .service .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    .service .carousel-inner .carousel-item-prev.carousel-item-right {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-    /* Movimientos de rotacion */
-    .service .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
-    .service .carousel-item-prev.carousel-item-right+.carousel-item,
-    .service .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
-    .service .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item,
-    .service .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
     }
 }
