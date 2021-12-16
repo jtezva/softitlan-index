@@ -294,7 +294,7 @@ nav {
 
 .quien .card-text {
     margin: 0 0 9% 4%;
-    font-size: 2.8vh;
+    font-size: 2.4vw;
     text-align: justify;
 }
 
@@ -727,7 +727,7 @@ footer span .derechos {
     }
 }
 
-@media screen and (min-width: 568px) and (max-width: 639px) {
+@media screen and (min-width: 568px) and (max-width: 649px) {
     /*algunos telefonos volteados*/
     .jumbotron {
         height: 60% !important;
@@ -742,10 +742,75 @@ footer span .derechos {
         z-index: 2;
         text-align: justify;
     }
+    /*carrusel servicios*/
+    .service-fixed .cards-wrapper {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .service-fixed .card img {
+        width: 50%;
+    }
 }
 
-@media screen and (min-width: 640px) and (max-width: 1023px) {
-    /*tablet*/
+@media screen and (min-width: 700px) and (max-width: 768px) {
+    /*Tablet vertical*/
+    /*quienes somos*/
+    .quien header h2 {
+        width: 100%;
+    }
+    .quien .card-text {
+        font-size: 2.0vh;
+    }
+    /*contactanos*/
+    .contacto .cuadro {
+        margin: 4% 4% 4% 4%;
+        width: 77%;
+    }
+    .contacto .card-group {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1%;
+    }
+    .contacto .cuadro h2 {
+        font-size: 4.5vh;
+    }
+    .contacto .input-3 {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 20%;
+        position: relative;
+        border: 0 solid;
+        padding-top: 0.7%;
+        padding-bottom: 0.7%;
+    }
+    .contacto #demo3 {
+        position: absolute;
+        display: block;
+        top: 10%;
+        right: 5%;
+        height: 76%;
+        width: 19%;
+    }
+    .contacto .entrada-3 {
+        margin-left: 17%;
+        background: transparent;
+        font-size: 2.2vw;
+        border: 0 solid;
+        color: white;
+        display: flex;
+    }
+    .contacto .entrada {
+        font-size: 2.0vh;
+    }
+    .contacto .mensaje {
+        font-size: 2.0vh;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    /*tablet horizontal*/
     /*Nav*/
     .navbar li a:hover {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
