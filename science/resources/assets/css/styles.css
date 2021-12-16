@@ -15,6 +15,66 @@ nav {
 }
 
 /*JUMBOS*/
+.jumbos{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg);
+    background-size: 100% 100%;    
+}
 .jumbos .container{
     background-color: rgba(0, 0, 0, 0.75) !important;
+    position: relative;
+    top: 25%;
+}
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px){
+
+}
+/* Escritorio grande */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .jumbos{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../../img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg);
+        background-size: 100% 100%;    
+    }
+    .jumbos .container{
+        background-color: rgba(0, 0, 0, 0.75) !important;
+        position: relative;
+        top: 25%;
+    }
+}
+
+/* Tablets y phablets telefono horizontal*/
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .jumbos{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../../img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg);
+        background-size: 100% 100%;    
+    }
+    .jumbos .container{
+        background-color: rgba(0, 0, 0, 0.75) !important;
+        position: relative;
+        top: 25%;
+    }
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+    .jumbos{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../../img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg);
+        background-size: 100% 100%;    
+    }
+    .jumbos .container{
+        background-color: rgba(0, 0, 0, 0.75) !important;        
+    }
 }
