@@ -15,36 +15,35 @@ nav {
 }
 
 /*JUMBOS*/
-.jumbos{
+.jumbos {
     width: 100vw;
     height: 100vh;
     background-image: url(../../img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg);
-    background-size: 100% 100%;    
+    background-size: 100% 100%;
 }
-.jumbos .container{
+
+.jumbos .container {
     background-color: rgba(0, 0, 0, 0.75) !important;
     position: relative;
     top: 25%;
 }
 
 /* Escritorio extra grande */
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {}
 
-}
 /* Escritorio grande */
-@media only screen and (min-width: 992px) and (max-width: 1199px){
-
-}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
 /* Escritorio pequeño / tablet */
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .jumbos{
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .jumbos {
         width: 100vw;
         height: 100vh;
         background-image: url(../../img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg);
-        background-size: 100% 100%;    
+        background-size: 100% 100%;
     }
-    .jumbos .container{
+
+    .jumbos .container {
         background-color: rgba(0, 0, 0, 0.75) !important;
         position: relative;
         top: 25%;
@@ -52,14 +51,15 @@ nav {
 }
 
 /* Tablets y phablets telefono horizontal*/
-@media only screen and (min-width: 576px) and (max-width: 767px){
-    .jumbos{
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .jumbos {
         width: 100vw;
         height: 100vh;
         background-image: url(../../img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg);
-        background-size: 100% 100%;    
+        background-size: 100% 100%;
     }
-    .jumbos .container{
+
+    .jumbos .container {
         background-color: rgba(0, 0, 0, 0.75) !important;
         position: relative;
         top: 25%;
@@ -67,14 +67,27 @@ nav {
 }
 
 /* Teléfonos */
-@media only screen and (max-width: 575px){
-    .jumbos{
+@media only screen and (max-width: 575px) {
+    .jumbos {
         width: 100vw;
         height: 100vh;
         background-image: url(../../img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg);
-        background-size: 100% 100%;    
+        background-size: 100%;
     }
-    .jumbos .container{
-        background-color: rgba(0, 0, 0, 0.75) !important;        
+
+    .jumbos .img-fluid {
+        width: 80%;
+        height: 100%;
+    }
+
+    .jumbos .container {
+        background-color: rgba(0, 0, 0, 0.75) !important;
+        text-align: center;
+    }
+
+    /*Ciencia*/
+
+    .ciencia p{
+        text-align: justify;
     }
 }

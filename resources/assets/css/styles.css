@@ -7,8 +7,7 @@ hr {
 
 .jumbotron {
     background-color: #202124 !important;
-    height: 40% !important;
-    /*El tamaño se modifica en particulas.css*/
+    height: 50vh !important;
 }
 
 .imagen-2 {
@@ -38,9 +37,7 @@ hr {
 
 .jumbotron #particles-js {
     position: absolute;
-    margin: -10.8vh 0% 0% -5.4vh;
-    height: 100%;
-    width: 100%;
+    margin: -10.8vh 0% 0% -5.4vh;    
     z-index: 1;
 }
 
@@ -510,8 +507,8 @@ footer span .derechos {
     margin: 0 10% 0 0;
 }
 
-@media screen and (max-width: 530px) {
-    /*telefono*/
+/* Teléfonos */
+@media screen and (max-width: 575px) {
     /*Nav*/
     .navbar li a:hover {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -727,19 +724,19 @@ footer span .derechos {
     }
 }
 
-@media screen and (min-width: 568px) and (max-width: 649px) {
+/* Tablets y phablets */
+@media screen and (min-width: 576px) and (max-width: 767px) {
     /*algunos telefonos volteados*/
     .jumbotron {
         height: 60% !important;
     }
     .jumbotron .imagen-2 {
-        width: 50%;
-        margin: 5% 0% 0% 2%;
+        width: 30%;
+        margin: -5% 0% 0% 0%;
     }
     .jumbotron .texto-2 {
-        width: 80%;
-        margin: 10% 0 0% -10%;
-        z-index: 2;
+        width: 60%;
+        margin: 0% 0 0% 35%;
         text-align: justify;
     }
     /*carrusel servicios*/
@@ -752,8 +749,33 @@ footer span .derechos {
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     /*Tablet vertical*/
+    .jumbotron {
+        height: 50% !important;
+    }
+
+    .jumbotron .container-fluid{
+    }
+    
+    .jumbotron .container-fluid .row{
+        align-self: center;
+        width: 100%;
+        position: absolute;
+        top: 10%;
+    }
+    .jumbotron .container-fluid .row .col{
+    }
+
+
+    .jumbotron .imagen-2 {
+        width: 80%;
+        text-align: center;
+    }
+    .jumbotron .texto-2 {
+        width: 80%;        
+        text-align: justify;
+    }
     /*quienes somos*/
     .quien header h2 {
         width: 100%;
@@ -809,7 +831,8 @@ footer span .derechos {
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+/* Escritorio grande */
+@media screen and (min-width: 992) and (max-width: 119) {
     /*tablet horizontal*/
     /*Nav*/
     .navbar li a:hover {
@@ -1067,4 +1090,10 @@ footer span .derechos {
     footer .row .img-fluid {
         width: 90%;
     }
+}
+
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px){
+
 }
