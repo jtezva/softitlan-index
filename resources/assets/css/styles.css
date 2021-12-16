@@ -7,7 +7,7 @@ hr {
 
 .jumbotron {
     background-color: #202124 !important;
-    height: 50% !important;
+    height: 40% !important;
     /*El tamaño se modifica en particulas.css*/
 }
 
@@ -754,7 +754,7 @@ footer span .derechos {
     }
     /*Jumbotron*/
     .jumbotron {
-        height: 50% !important;
+        height: 25% !important;
     }
     .imagen-2 {
         align-items: center;
