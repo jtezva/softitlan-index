@@ -6,7 +6,7 @@ hr {
 /*Jumbotron*/
 
 .jumbotron {
-    background-color: #202124 !important;  
+    background-color: #202124 !important;
     height: 50% !important;
     /*El tamaño se modifica en particulas.css*/
 }
@@ -76,7 +76,7 @@ hr {
     align-items: center;
 }
 
-.qsomos .info p{
+.qsomos .info p {
     text-align: justify;
     margin: 0 1vh 0 1vh;
 }
@@ -159,7 +159,7 @@ nav {
 .service-fixed {
     background-color: #F3F5F9;
     height: 100%;
-    margin: 0 0 3% 0;
+    margin: 3% 0 3% 0;
 }
 
 .carousel-inner {
@@ -192,7 +192,7 @@ nav {
 
 .service-fixed .titulo-service {
     color: black;
-    margin: 1% 0 0 4%;
+    margin: 3% 0 0 4%;
 }
 
 .service-fixed,
@@ -275,15 +275,14 @@ nav {
 /*Quienes somos descripcion completa*/
 
 .quien {
-    background-image: url(https://softitlan.com/taskmanager/resources/img/uploads/index-somos.jpg);
+    background-image: url(https://drive.google.com/uc?id=1KPbQ_8_M0ZY7osurzz5654F7L6cSWYLC);
     background-size: 100%;
     width: 100%;
-    margin: 0 0 3% 0;
+    margin: 3% 0 3% 0;
 }
 
 .quien header h2 {
-    font-size: 2.5vw;
-    margin: 2% 0 4% 4%;
+    margin: 1.5% 0 2% 4%;
     width: 20.8%;
     color: black;
 }
@@ -511,10 +510,8 @@ footer span .derechos {
     margin: 0 10% 0 0;
 }
 
-
-
-@media screen and (max-width: 530px) { /*telefono*/
-
+@media screen and (max-width: 530px) {
+    /*telefono*/
     /*Nav*/
     .navbar li a:hover {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -524,11 +521,9 @@ footer span .derechos {
     /*Jumbotron
     Todo se modifica en particulas.css
     */
-
-    .jumbotron{
+    .jumbotron {
         height: 90% !important;
     }
-
     /* qsomos */
     .qsomos {
         margin: 1vh 0 5vh 0;
@@ -613,14 +608,22 @@ footer span .derechos {
         opacity: 0.8;
     }
     /*Service*/
+    .service-fixed {
+        margin: 13% 0 3% 0;
+    }
+    .service-fixed .card-title {
+        font-size: 3.5vh;
+    }
+    .service-fixed .card-text {
+        font-size: 2vh;
+    }
     /*Quien*/
     .quien {
-        background-image: url(https://images.pexels.com/photos/5191390/pexels-photo-5191390.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-image: url(https://drive.google.com/uc?id=1KPbQ_8_M0ZY7osurzz5654F7L6cSWYLC);
         background-size: cover;
         margin: 8vh 0 8vh 0;
     }
     .quien header h2 {
-        font-size: 4.5vh;
         width: 100%;
     }
     /*Team*/
@@ -634,7 +637,7 @@ footer span .derechos {
     }
     .team .titulo-team {
         color: black;
-        margin: 1.5% 0 0 4%; 
+        margin: 1.5% 0 0 4%;
     }
     .team .container-fluid .card {
         margin: 3vh 0% 0 0%;
@@ -716,54 +719,49 @@ footer span .derechos {
         font-size: 2.5vh;
     }
     /*Footer*/
-    footer span .derechos{
-        display: block;    
+    footer span .derechos {
+        display: block;
     }
-
     footer .row .img-fluid {
         align-items: center;
     }
 }
 
-@media screen and (min-width: 568px) and (max-width: 639px) { /*algunos telefonos volteados*/
+@media screen and (min-width: 568px) and (max-width: 639px) {
+    /*algunos telefonos volteados*/
     .jumbotron {
         height: 60% !important;
     }
-
-    .jumbotron .imagen-2 {        
-        width: 50%;    
+    .jumbotron .imagen-2 {
+        width: 50%;
         margin: 5% 0% 0% 2%;
     }
-
     .jumbotron .texto-2 {
         width: 80%;
         margin: 10% 0 0% -10%;
         z-index: 2;
         text-align: justify;
-        
     }
 }
 
-@media screen and (min-width: 640px) and (max-width: 1023px) { /*tablet*/
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    /*tablet*/
     /*Nav*/
     .navbar li a:hover {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         background-color: #188038;
         -webkit-transform: scale(0.98);
     }
-
     /*Jumbotron*/
-    .jumbotron{
+    .jumbotron {
         height: 50% !important;
     }
-
     .imagen-2 {
         align-items: center;
         margin: auto auto;
         width: 70%;
         z-index: 2;
     }
-    
     .jumbotron .texto-2 {
         width: 70%;
         margin: 4% 10%;
@@ -771,12 +769,10 @@ footer span .derechos {
         z-index: 2;
         text-align: justify;
     }
-
     .imagen-2 {
         width: 20%;
         z-index: 2;
     }
-    
     .jumbotron .texto-2 {
         width: 70%;
         margin: -2% 0 0% 25%;
@@ -784,7 +780,6 @@ footer span .derechos {
         z-index: 2;
         text-align: justify;
     }
-    
     .jumbotron h1 {
         font-family: Roboto;
         font-style: normal;
@@ -794,15 +789,14 @@ footer span .derechos {
         text-align: center;
         color: #FFFFFF;
         text-align: justify;
-    } 
-
-    .jumbotron #particles-js{
+    }
+    .jumbotron #particles-js {
         position: absolute;
         height: 100% !important;
         width: 100%;
         z-index: 1;
     }
-    /* qsomos */    
+    /* qsomos */
     .qsomos .info {
         position: absolute;
         z-index: 1;
@@ -816,12 +810,10 @@ footer span .derechos {
         text-align: center;
         align-items: center;
     }
-    
     .qsomos .info p {
         opacity: 100%;
         font-size: 1.8vw;
     }
-
     .qsomos div#demo {
         width: 38.2%;
         position: relative;
@@ -873,14 +865,35 @@ footer span .derechos {
         opacity: 0.8;
     }
     /*Service*/
+    .service-fixed .card {
+        margin: 1% 3% 0 3%;
+    }
+    .carousel-inner {
+        padding-left: 1.2%;
+    }
+    .service-fixed .carousel-item {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .service-fixed .img-fluid {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .service-fixed .card-title {
+        font-size: 3.5vh;
+    }
+    .service-fixed .card-text {
+        font-size: 2vh;
+    }
     /*Quien*/
     .quien {
-        background-image: url(https://images.pexels.com/photos/5191390/pexels-photo-5191390.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-image: url(https://drive.google.com/uc?id=1KPbQ_8_M0ZY7osurzz5654F7L6cSWYLC);
         background-size: cover;
         margin: 8vh 0 8vh 0;
     }
     .quien header h2 {
-        font-size: 4.5vh;
         width: 100%;
     }
     .quien img {
@@ -936,8 +949,7 @@ footer span .derechos {
         text-align: center;
         height: 100%;
     }
-
-    .team .card-body .card-title{
+    .team .card-body .card-title {
         font-size: 95%;
     }
     /*Contacto*/
@@ -988,6 +1000,6 @@ footer span .derechos {
     }
     /*Footer*/
     footer .row .img-fluid {
-        width: 90%;    
+        width: 90%;
     }
 }
