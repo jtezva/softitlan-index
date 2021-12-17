@@ -34,7 +34,7 @@ $mail->FromName = 'SoftitlanMx';
 //Agregar destinatario
 $mail->AddAddress($_POST["correo"]);
 $mail->Subject = $_POST["asunto"];
-$mail->Body = 'Nombre: '+$_POST['nombre']+' Telefono: '+$_POST["telefono"]+ ' Mensaje: '+$_POST["mensaje"];
+$mail->Body = 'Nombre: '.$_POST['nombre'].' Telefono: '.$_POST["telefono"]. ' Mensaje: '.$_POST["mensaje"];
  
 //Avisar si fue enviado o no y dirigir al index
 if ($mail->Send()) {
