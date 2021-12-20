@@ -37,7 +37,7 @@ hr {
 
 .jumbotron #particles-js {
     position: absolute;
-    margin: -10.8vh 0% 0% -5.4vh;    
+    margin: -10.8vh 0% 0% -5.4vh;
     z-index: 1;
 }
 
@@ -170,7 +170,7 @@ nav {
 
 .service-fixed .card {
     border-radius: 15px;
-    margin: 1% 3% 0 3%;
+    margin: 0% 3% 0 3%;
     background: rgba(32, 33, 36, 0.85);
     color: #FFFFFF;
     position: static;
@@ -264,7 +264,7 @@ nav {
 }
 
 .mision .card-text {
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     text-align: justify;
 }
 
@@ -291,7 +291,7 @@ nav {
 
 .quien .card-text {
     margin: 0 0 9% 4%;
-    font-size: 2.4vw;
+    font-size: 1.2vw;
     text-align: justify;
 }
 
@@ -507,7 +507,9 @@ footer span .derechos {
     margin: 0 10% 0 0;
 }
 
+
 /* Teléfonos */
+
 @media screen and (max-width: 575px) {
     /*Nav*/
     .navbar li a:hover {
@@ -724,7 +726,9 @@ footer span .derechos {
     }
 }
 
+
 /* Tablets y phablets */
+
 @media screen and (min-width: 576px) and (max-width: 767px) {
     /*algunos telefonos volteados*/
     .jumbotron {
@@ -752,28 +756,22 @@ footer span .derechos {
 @media screen and (min-width: 768px) and (max-width: 991px) {
     /*Tablet vertical*/
     .jumbotron {
-        height: 50% !important;
+        height: 45% !important;
     }
-
-    .jumbotron .container-fluid{
-    }
-    
-    .jumbotron .container-fluid .row{
+    .jumbotron .container-fluid {}
+    .jumbotron .container-fluid .row {
         align-self: center;
         width: 100%;
         position: absolute;
         top: 10%;
     }
-    .jumbotron .container-fluid .row .col{
-    }
-
-
+    .jumbotron .container-fluid .row .col {}
     .jumbotron .imagen-2 {
         width: 80%;
         text-align: center;
     }
     .jumbotron .texto-2 {
-        width: 80%;        
+        width: 80%;
         text-align: justify;
     }
     /*quienes somos*/
@@ -831,7 +829,9 @@ footer span .derechos {
     }
 }
 
+
 /* Escritorio grande */
+
 @media screen and (min-width: 992) and (max-width: 119) {
     /*tablet horizontal*/
     /*Nav*/
@@ -1094,6 +1094,5 @@ footer span .derechos {
 
 
 /* Escritorio extra grande */
-@media only screen and (min-width: 1200px){
 
-}
+@media only screen and (min-width: 1200px) {}
